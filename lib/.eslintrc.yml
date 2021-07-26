@@ -9,3 +9,4 @@ extends:
 
 rules:
   camelcase: off
+  max-statements: off
