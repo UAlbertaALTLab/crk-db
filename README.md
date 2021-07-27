@@ -1,6 +1,6 @@
 # Plains Cree Dictionary Database Management
 
-The repository contains scripts and documentation for managing the multiple data sources for [ALTLab's][ALTLab] [Plains Cree][Cree] dictionary, which can be viewed online [here][itwewina]. This repository does _not_ (and should not) contain the actual data.
+The repository contains scripts and documentation for managing the multiple data sources for [ALTLab's][ALTLab] [Plains Cree][Cree] dictionary, which can be viewed online [here][itwewina]. This repository does _not_ (and should not) contain the actual data. That data is stored in the private ALTLab repo under `crk/dicts`.
 
 The database uses the [Data Format for Digital Linguistics][DaFoDiL] (DaFoDiL) as its underlying data format, a set of recommendations for storing linguistic data in JSON.
 
@@ -30,26 +30,17 @@ ALTLab's dictionary database is / will be aggregated from the following sources:
   - This will be a static source.
 * _The Student's Dictionary of Literary Plains Cree, Based on Contemporary Texts_
   - This source has already been integrated into _Cree: Words_.
-
-Another important data source is @katieschmirler's mappings from MD entries to CW entries.
+* ALTLab's internal database
+  - This is mostly a set of overrides, where we can store information about certain entries permanently.
 
 Also check out the [Plains Cree Grammar Pages][grammar].
-
-## Project Requirements
-
-* The field data from the original dictionaries should be retained in its original form, and preferably even incorporated into ALTLab's database in an unobtrusive way.
-
-* The order that sources are imported should be commutative (i.e. irrelevant; the script should output the same result regardless of the order the databases are imported).
-
-* Manual input should not be required for aggregating entries. Entries can however be flagged for manual inspection.
 
 ## Process
 
 At a high level, the process for aggregating the sources is as follows:
 
-1. **convert** data source from original format to [DaFoDiL][DaFoDiL]
-2. **clean** and normalize the data (partially handled during Step 1), while retaining the original data
-3. **import** the data into ALTLab's database using an aggregation algorithm (also does more data cleaning)
+1. **convert** each data source from original format to [DaFoDiL][DaFoDiL]
+3. **import** the data into the Plains Cree database using an algorithm that aggregates the individual data sources
 4. create **outputs**:
    - the **sqlite3** database for itwêwina
    - the **FST** LEXC files
@@ -60,10 +51,10 @@ Please see the [style guide](./docs/style-guide.md) (with glossary) for document
 
 ## The Database
 
-The database is located in the private ALTLab repo at `crk/dicts/database-{hash}.ndjson`, where `{hash}` is an SHA1 hash of the database. This repo includes the following JavaScript utilities for working with the database, both located in `lib/utlities`.
+The database is located in the private ALTLab repo at `crk/dicts/database.ndjson`. This repo includes the following JavaScript utilities for working with the database, both located in `lib/utlities`.
 
-* `loadEntries.js`: Reads all the entries from the database (or any NDJSON file) into memory and returns a Promise that resolves to an Array of the entries for further querying and manipulation.
-* `saveDatabase.js`: Accepts an Array of database entries and saves it to the specified path as an NDJSON file with a trailing SHA1 hash. Note that by default the hash will be inserted into the provided filename: passing `database.ndjson` as the first argument to `saveDatabase.js` will save the file to `database-{hash}.ndjson`. You can disable this by passing `hash: false` as an option (in the options hash as the third argument to the function).
+* `readNDJSON.js`: Reads all the entries from the database (or any NDJSON file) into memory and returns a Promise that resolves to an Array of the entries for further querying and manipulation.
+* `writeNDJSON.js`: Accepts an Array of database entries and saves it to the specified path as an NDJSON file.
 
 ## Building & Updating the Database
 
@@ -71,7 +62,7 @@ To build and/or update the database, follow the steps below. Each of these steps
 
 1. Download the original data sources. These are stored in the private ALTLab repo in `crk/dicts`. **Do not commit these files to git.**
 
-  * MD > CW mappings: `MD-CW-mappings.tsv`
+  * ALTLab data: `altlab.tsv`
   * _Cree: Words_: `Wolvengrey.toolbox`
   * Maskwacîs dictionary: `Maskwacis.tsv`
 
@@ -87,9 +78,11 @@ To build and/or update the database, follow the steps below. Each of these steps
 
   Entries from individual sources are **not** imported as main entries in the ALTLab database. Instead they are stored as subentries (using the `dataSources` field). The import script merely matches entries from individual sources to a main entry, or creates a main entry if none exists. An aggregation script then does the work of combining information from each of the subentries into a main entry (see the next step).
 
-5. For convenience, you can perform all the above steps with a single command in the terminal: `npm run build` | `yarn build`. In order for this command to work, you will need each of the following files to be present in the `/data` directory, with these exact filenames:
+5. After all the data sources have been imported into the database, you can run the aggregation script which updates the main entry with data from the individual data sources: `aggregate data/database.ndjson`.
 
-* `MD-CW-mappings.tsv`
+6. For convenience, you can perform all the above steps with a single command in the terminal: `npm run build` | `yarn build`. In order for this command to work, you will need each of the following files to be present in the `/data` directory, with these exact filenames:
+
+* `ALTLab.tsv`
 * `Maskwacis.tsv`
 * `Wolvengrey.toolbox`
 
@@ -100,8 +93,6 @@ You can also run this script as a JavaScript module. It is located in `lib/build
 ## Tests
 
 Test for this repository are written using Mocha + Chai. The tests check that the conversion scripts are working properly, and test for known edge cases. There is one test suite for each conversion script (and some other miscellaneous unit tests as well), located alongside that script in `lib` with the extension `.test.js`. You can run the entire test suite with `npm test`.
-
-There is also a special test suite for the database build process. Running this test suite requires the same setup as needed to run `lib/buildDatabase.js` (see above). You can run this test suite with `npm run test:build` | `yarn test:build`.
 
 <!-- Links -->
 [ALTLab]:     https://github.com/UAlbertaALTLab

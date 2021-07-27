@@ -9,6 +9,8 @@
 * matchType: The type of match (see [Match Types](#match-types) below)
 * FST stem: The FST stem for the corresponding CW entry.
 
+These mappings have now been incorporated directly into the Maskwacîs database.
+
 ## Match Types
 
 There are several types of matches:
@@ -26,7 +28,3 @@ Match Type    | Description
 `PV`          | Something is wrong because of a preverb (e.g. misidentification of a preverb; wrong preverb because of vowel length). Otherwise these would be a `conjugation` type. _Do not show in itwêwina._
 `same`        | Glosses and lemmas match. Show in itwêwina.
 `similar`     | Very similar glosses, probably the same lemma. Needs review.
-
-## Using the Mappings
-
-The utility script `lib/utilities/getMappings.js` reads the MD > CW mappings file and returns a JavaScript Map of the records in the mappings TSV. The keys for the map are the MD headwords.
