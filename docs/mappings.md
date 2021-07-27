@@ -13,17 +13,19 @@
 
 There are several types of matches:
 
-* `broad`: MD has a broader meaning; probably the same lemma. Show in itwêwina.
-* `conjugation`: MD is the same lemma as a CW entry, but inflected (person, number, preverb, diminutive, etc.). This MD might be same/equivalent, similar, broader, or narrower meaning. Show in itwêwina. Would be good to associate this with its stem.
-* `dialect`: Needs review.
-* `different`: Needs review.
-* `equivalent`: Glosses and lemmas match. Show in itwêwina.
-* `Err/Orth`: "A very small but miscellaneous category. Ignore for now." [KS]
-* `lemma`: Not the right lemma, but not necessarily a new lemma (usually due to vowel length). _Do not show in itwêwina_.
-* `narrow`: MD has a narrower meaning; probably the same lemma. Show in itwêwina.
-* `PV`: Something is wrong because of a preverb (e.g. misidentification of a preverb; wrong preverb because of vowel length). Otherwise these would be a `conjugation` type. _Do not show in itwêwina._
-* `same`: Glosses and lemmas match. Show in itwêwina.
-* `similar`: Very similar glosses, probably the same lemma. Needs review.
+Match Type    | Description
+--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+`broad`       | MD has a broader meaning; probably the same lemma. Show in itwêwina.
+`conjugation` | MD is the same lemma as a CW entry, but inflected (person, number, preverb, diminutive, etc.). This MD might be same/equivalent, similar, broader, or narrower meaning. Show in itwêwina. Would be good to associate this with its stem.
+`dialect`     | Needs review.
+`different`   | Needs review.
+`equivalent`  | Glosses and lemmas match. Show in itwêwina.
+`Err/Orth`    | "A very small but miscellaneous category. Ignore for now." [KS]
+`lemma`       | Not the right lemma, but not necessarily a new lemma (usually due to vowel length). _Do not show in itwêwina_.
+`narrow`      | MD has a narrower meaning; probably the same lemma. Show in itwêwina.
+`PV`          | Something is wrong because of a preverb (e.g. misidentification of a preverb; wrong preverb because of vowel length). Otherwise these would be a `conjugation` type. _Do not show in itwêwina._
+`same`        | Glosses and lemmas match. Show in itwêwina.
+`similar`     | Very similar glosses, probably the same lemma. Needs review.
 
 ## Using the Mappings
 
