@@ -14,7 +14,7 @@ import {
 const __dirname    = getDirname(fileURLToPath(import.meta.url));
 const { readFile } = promises;
 
-describe.skip(`Toolbox database`, function() {
+describe(`Toolbox database`, function() {
 
   before(async function() {
 
