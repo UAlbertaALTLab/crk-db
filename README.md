@@ -47,7 +47,7 @@ At a high level, the process for aggregating the sources is as follows:
 
 ## Style Guide
 
-Please see the [style guide](./docs/style-guide.md) (with glossary) for documentation of the lexicographical conventions used in this database.
+Please see the [style guide](./docs/style-guide.md) for documentation of the lexicographical conventions used in this database.
 
 ## The Database
 
