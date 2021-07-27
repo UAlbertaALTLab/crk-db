@@ -20,15 +20,15 @@ import {
 
 const __dirname  = getDirname(fileURLToPath(import.meta.url));
 
-describe('buildDatabase.js', function() {
+describe(`buildDatabase.js`, function() {
 
-  const dataDir      = joinPath(__dirname, '../data');
-  const cwInputPath  = joinPath(dataDir, 'Wolvengrey.toolbox');
-  const mdInputPath  = joinPath(dataDir, 'Maskwacis.tsv');
-  const cwDataPath   = joinPath(dataDir, 'Wolvengrey.ndjson');
-  const mdDataPath   = joinPath(dataDir, 'Maskwacis.ndjson');
-  const databasePath = joinPath(dataDir, 'database.ndjson');
-  const mappingsPath = joinPath(dataDir, 'MD-CW-mappings.tsv');
+  const dataDir      = joinPath(__dirname, `../../data`);
+  const cwInputPath  = joinPath(dataDir, `Wolvengrey.toolbox`);
+  const mdInputPath  = joinPath(dataDir, `Maskwacis.tsv`);
+  const cwDataPath   = joinPath(dataDir, `Wolvengrey.ndjson`);
+  const mdDataPath   = joinPath(dataDir, `Maskwacis.ndjson`);
+  const databasePath = joinPath(dataDir, `database.ndjson`);
+  const mappingsPath = joinPath(dataDir, `MD-CW-mappings.tsv`);
 
   before(async function() {
     this.timeout(25_000); // 15 seconds
@@ -36,7 +36,7 @@ describe('buildDatabase.js', function() {
     await convertMD(mdInputPath, mdDataPath, mappingsPath, { silent: true });
   });
 
-  it('is commutative (creates the same number of entries regardless of source import order)', async function() {
+  it(`is commutative (creates the same number of entries regardless of source import order)`, async function() {
 
     this.timeout(25_000); // 15 seconds
 

@@ -1,0 +1,709 @@
+[{
+    "dataSources": {
+      "CW": {
+        "glosses": ["star", "little"],
+        "original": "\\sro acâhkos\r\n\\syl ᐊᒑᐦᑯᐢ\r\n\\ps NA-1\r\n\\def star, little star\r\n\\dl Cree: pC\r\n\\dl Cree: wC\r\n\\gr1 singular; diminutive\r\n\\stm acâhkos-\r\n\\drv atâhkw- + /-is/\r\n\\mrp atâhkw-\r\n\\mrp /-is/\r\n\\alt\r\n\\rel atâhk\r\n\\sem Sky\r\n\\gl star\r\n\\gl little\r\n\\cat\r\n\\his *aθa:nkwa ~  *aθankwa; cf. Saulteaux: anank\r\n\\gr2\r\n\\src AC\r\n\\src AE\r\n\\src AN\r\n\\src FC\r\n\\src HW\r\n\\src LB\r\n\\src LL\r\n\\src ME\r\n\\src N-3\r\n\\src SR\r\n\\src W&A\r\n\\dt 04/May/2021",
+        "pos": "NA-1",
+        "head": {
+          "proto": "acâhkos",
+          "sro": "acâhkos",
+          "syll": "ᐊᒑᐦᑯᐢ"
+        },
+        "lemma": {
+          "proto": "acâhkos",
+          "sro": "acâhkos",
+          "syll": "ᐊᒑᐦᑯᐢ"
+        },
+        "dialects": ["plai1258", "wood1236"],
+        "senses": [{
+          "definition": "star, little star"
+        }],
+        "matched": true
+      },
+      "MD": {
+        "English_POS": "A_DET star#star_N ._",
+        "English_Search": "a star.",
+        "head": {
+          "md": "achahkos",
+          "syll": "ᐊᒐᐦᑯᐢ"
+        },
+        "lemma": {
+          "md": "achahkos",
+          "syll": "ᐊᒐᐦᑯᐢ"
+        },
+        "mapping": {
+          "analysis": "acâhkos+N+AN+Sg",
+          "definition": "star",
+          "lemma": "acâhkos",
+          "type": "same"
+        },
+        "original": "achahkos\tᐊᒐᐦᑯᐢ\tn\tA star.\tsky; star; sun\t1.1; 1.1.1.2; 1.1.1\tA_DET star#star_N ._\ta star.\t\t\t\tacâhkos\tstar\tacâhkos+N+AN+Sg\tsame\n",
+        "pos": "N",
+        "semanticDomains": ["sky", "star", "sun"],
+        "semanticIndices": ["1.1", "1.1.1.2", "1.1.1"],
+        "senses": [{
+          "definition": "A star."
+        }]
+      }
+    },
+    "head": {
+      "proto": "acâhkos",
+      "sro": "acâhkos",
+      "syll": "ᐊᒑᐦᑯᐢ"
+    },
+    "lemma": {
+      "proto": "acâhkos",
+      "sro": "acâhkos",
+      "syll": "ᐊᒑᐦᑯᐢ"
+    },
+    "pos": "NA-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["North Star", "north", "star", "Polaris"],
+        "original": "\\sro acâhkos êkâ kâ-âhcît\r\n\\syl ᐊᒑᐦᑯᐢ  ᐁᑳ  ᑳ ᐋᐦᒌᐟ\r\n\\ps INM < NA-1 + NEG + VAI-1\r\n\\def North Star, Polaris; [literally: \"star that does not move\"]\r\n\\dl Cree: pC\r\n\\gr1 singular; diminutive / Negative / Conjunct, 3s\r\n\\stm acâhkos-\r\n\\drv atâhkw- + /-is/\r\n\\mrp atâhkw-\r\n\\mrp /-is/\r\n\\stm êkâ\r\n\\stm âhcî-\r\n\\drv {kâ-} + âhcî- + {-t}\r\n\\mrp /âht-/\r\n\\mrp /-î/\r\n\\mrp {-t}\r\n\\alt\r\n\\rel\r\n\\sem\r\n\\gl North Star\r\n\\gl north\r\n\\gl star\r\n\\gl Polaris\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AW\r\n\\new new\r\n\\dt 03/Oct/2020",
+        "pos": "INM < NA-1 + NEG + VAI-1",
+        "head": {
+          "proto": "acâhkos êkâ kâ-âhcît",
+          "sro": "acâhkos êkâ kâ-âhcît",
+          "syll": "ᐊᒑᐦᑯᐢ  ᐁᑳ  ᑳ ᐋᐦᒌᐟ"
+        },
+        "lemma": {
+          "proto": "acâhkos êkâ kâ-âhcît",
+          "sro": "acâhkos êkâ kâ-âhcît",
+          "syll": "ᐊᒑᐦᑯᐢ  ᐁᑳ  ᑳ ᐋᐦᒌᐟ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "North Star, Polaris"
+        }],
+        "literalMeaning": "star that does not move",
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acâhkos êkâ kâ-âhcît",
+      "sro": "acâhkos êkâ kâ-âhcît",
+      "syll": "ᐊᒑᐦᑯᐢ  ᐁᑳ  ᑳ ᐋᐦᒌᐟ"
+    },
+    "lemma": {
+      "proto": "acâhkos êkâ kâ-âhcît",
+      "sro": "acâhkos êkâ kâ-âhcît",
+      "syll": "ᐊᒑᐦᑯᐢ  ᐁᑳ  ᑳ ᐋᐦᒌᐟ"
+    },
+    "pos": "INM < NA-1 + NEG + VAI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["comet", "star", "tail"],
+        "original": "\\sro acâhkos kâ-osoyit\r\n\\syl ᐊᒑᐦᑯᐢ  ᑳ ᐅᓲᓯᐟ\r\n\\ps INM < NA-1 + VAI-1\r\n\\def comet, tailed star\r\n\\dl Cree: pC\r\n\\gr1 singular / Conjunct, 3s\r\n\\stm acâhkos-\r\n\\drv atâhkw- + /-is/\r\n\\mrp atâhkw-\r\n\\mrp /-is/\r\n\\stm osoyi-\r\n\\drv /o-/ + -soy- + /-i/\r\n\\mrp /o-/\r\n\\mrp -soy-\r\n\\mrp /-i/-2\r\n\\alt\r\n\\rel atâhk kâ-osôsit\r\n\\sem Sky\r\n\\gl comet\r\n\\gl star\r\n\\gl tail\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\new new\r\n\\src DM\r\n\\dt 13/Jul/2021",
+        "pos": "INM < NA-1 + VAI-1",
+        "head": {
+          "proto": "acâhkos kâ-osoyit",
+          "sro": "acâhkos kâ-osoyit",
+          "syll": "ᐊᒑᐦᑯᐢ  ᑳ ᐅᓲᓯᐟ"
+        },
+        "lemma": {
+          "proto": "acâhkos kâ-osoyit",
+          "sro": "acâhkos kâ-osoyit",
+          "syll": "ᐊᒑᐦᑯᐢ  ᑳ ᐅᓲᓯᐟ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "comet, tailed star"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acâhkos kâ-osoyit",
+      "sro": "acâhkos kâ-osoyit",
+      "syll": "ᐊᒑᐦᑯᐢ  ᑳ ᐅᓲᓯᐟ"
+    },
+    "lemma": {
+      "proto": "acâhkos kâ-osoyit",
+      "sro": "acâhkos kâ-osoyit",
+      "syll": "ᐊᒑᐦᑯᐢ  ᑳ ᐅᓲᓯᐟ"
+    },
+    "pos": "INM < NA-1 + VAI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["comet", "star", "tail"],
+        "original": "\\sro acâhkos kâ-osôsit\r\n\\syl ᐊᒑᐦᑯᐢ  ᑳ ᐅᓲᓯᐟ\r\n\\ps INM < NA-1 + VAI-1\r\n\\def comet, tailed star\r\n\\dl Cree: pC\r\n\\gr1 singular; diminutive / Conjunct, 3s\r\n\\stm acâhkos-\r\n\\drv atâhkw- + /-is/\r\n\\mrp atâhkw-\r\n\\mrp /-is/\r\n\\stm osôsi-\r\n\\drv /o-/ + -sôs- + /-i/\r\n\\mrp /o-/\r\n\\mrp -soy-\r\n\\mrp /-is/\r\n\\mrp /-i/-2\r\n\\alt\r\n\\rel atâhk kâ-osoyit\r\n\\sem Sky\r\n\\gl comet\r\n\\gl star\r\n\\gl tail\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AW\r\n\\dt 13/Aug/2020",
+        "pos": "INM < NA-1 + VAI-1",
+        "head": {
+          "proto": "acâhkos kâ-osôsit",
+          "sro": "acâhkos kâ-osôsit",
+          "syll": "ᐊᒑᐦᑯᐢ  ᑳ ᐅᓲᓯᐟ"
+        },
+        "lemma": {
+          "proto": "acâhkos kâ-osôsit",
+          "sro": "acâhkos kâ-osôsit",
+          "syll": "ᐊᒑᐦᑯᐢ  ᑳ ᐅᓲᓯᐟ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "comet, tailed star"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acâhkos kâ-osôsit",
+      "sro": "acâhkos kâ-osôsit",
+      "syll": "ᐊᒑᐦᑯᐢ  ᑳ ᐅᓲᓯᐟ"
+    },
+    "lemma": {
+      "proto": "acâhkos kâ-osôsit",
+      "sro": "acâhkos kâ-osôsit",
+      "syll": "ᐊᒑᐦᑯᐢ  ᑳ ᐅᓲᓯᐟ"
+    },
+    "pos": "INM < NA-1 + VAI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["star", "blanket", "starblanket", "chief", "Cree"],
+        "original": "\\sro acâhkosa kâ-otakohpit\r\n\\syl ᐊᒑᐦᑯᓴ  ᑳ ᐅᑕᑯᐦᐱᐟ\r\n\\ps INM < NA-1 + VAI-1\r\n\\def Starblanket; Cree chief, signatory to Treaty 4; [literally: \"One who has Stars as a Blanket\"]\r\n\\dl Cree: pC\r\n\\gr1 Name: obviative (4) / Conjunct, 3s(-4)\r\n\\stm acâhkos-\r\n\\drv atâhkw- + /-is/\r\n\\mrp atâhkw-\r\n\\mrp /-is/\r\n\\stm otakohpi-\r\n\\drv /ot-/ + akohp- + /-i/\r\n\\mrp /ot-/-2\r\n\\mrp akohp-\r\n\\mrp /-i/-2\r\n\\alt acâhkosa k-ôtakohpit\r\n\\rel\r\n\\sem Personal Names\r\n\\sem People\r\n\\gl star\r\n\\gl blanket\r\n\\gl starblanket\r\n\\gl chief\r\n\\gl Cree\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AW\r\n\\dt 01/Jun/2021",
+        "pos": "INM < NA-1 + VAI-1",
+        "head": {
+          "proto": "acâhkosa kâ-otakohpit",
+          "sro": "acâhkosa kâ-otakohpit",
+          "syll": "ᐊᒑᐦᑯᓴ  ᑳ ᐅᑕᑯᐦᐱᐟ"
+        },
+        "lemma": {
+          "proto": "acâhkosa kâ-otakohpit",
+          "sro": "acâhkosa kâ-otakohpit",
+          "syll": "ᐊᒑᐦᑯᓴ  ᑳ ᐅᑕᑯᐦᐱᐟ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "Starblanket"
+        }, {
+          "definition": "Cree chief, signatory to Treaty 4"
+        }],
+        "literalMeaning": "One who has Stars as a Blanket",
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acâhkosa kâ-otakohpit",
+      "sro": "acâhkosa kâ-otakohpit",
+      "syll": "ᐊᒑᐦᑯᓴ  ᑳ ᐅᑕᑯᐦᐱᐟ"
+    },
+    "lemma": {
+      "proto": "acâhkosa kâ-otakohpit",
+      "sro": "acâhkosa kâ-otakohpit",
+      "syll": "ᐊᒑᐦᑯᓴ  ᑳ ᐅᑕᑯᐦᐱᐟ"
+    },
+    "pos": "INM < NA-1 + VAI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["star", "little", "star"],
+        "original": "\\sro acâhkosis\r\n\\syl ᐊᒑᐦᑯᓯᐢ\r\n\\ps NA-1\r\n\\def little star, tiny star\r\n\\dl Cree: pC\r\n\\dl Cree: wC\r\n\\gr1 singular; diminutive\r\n\\stm acâhkosis-\r\n\\drv atâhkw- + /-isis/\r\n\\mrp atâhkw-\r\n\\mrp /-isis/\r\n\\alt\r\n\\rel atâhk\r\n\\sem Sky\r\n\\gl star\r\n\\gl little\r\n\\gl star\r\n\\cat\r\n\\his *aθa:nkwa ~ *aθankwa; cf. Saulteaux: anank\r\n\\gr2\r\n\\src AW\r\n\\new new\r\n\\dt 04/May/2021",
+        "pos": "NA-1",
+        "head": {
+          "proto": "acâhkosis",
+          "sro": "acâhkosis",
+          "syll": "ᐊᒑᐦᑯᓯᐢ"
+        },
+        "lemma": {
+          "proto": "acâhkosis",
+          "sro": "acâhkosis",
+          "syll": "ᐊᒑᐦᑯᓯᐢ"
+        },
+        "dialects": ["plai1258", "wood1236"],
+        "senses": [{
+          "definition": "little star, tiny star"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acâhkosis",
+      "sro": "acâhkosis",
+      "syll": "ᐊᒑᐦᑯᓯᐢ"
+    },
+    "lemma": {
+      "proto": "acâhkosis",
+      "sro": "acâhkosis",
+      "syll": "ᐊᒑᐦᑯᓯᐢ"
+    },
+    "pos": "NA-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["star", "movie", "sports", "music"],
+        "original": "\\sro acâhkosiwiw\r\n\\syl ᐊᒑᐦᑯᓯᐃᐧᐤ\r\n\\ps VAI-1\r\n\\def it is a star; s/he is a star (e.g. in movies, sports, music, etc.)\r\n\\dl Cree: pC\r\n\\gr1 Independent, 3s\r\n\\stm acâhkosiwi-\r\n\\drv acâhkos- + /-iwi/\r\n\\mrp atâhkw-\r\n\\mrp /-is/\r\n\\mrp /-iwi/\r\n\\alt\r\n\\rel acâhkos\r\n\\sem Sky\r\n\\sem People\r\n\\gl star\r\n\\gl movie\r\n\\gl sports\r\n\\gl music\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src LB\r\n\\dt 13/Aug/2020",
+        "pos": "VAI-1",
+        "head": {
+          "proto": "acâhkosiwiw",
+          "sro": "acâhkosiwiw",
+          "syll": "ᐊᒑᐦᑯᓯᐃᐧᐤ"
+        },
+        "lemma": {
+          "proto": "acâhkosiwiw",
+          "sro": "acâhkosiwiw",
+          "syll": "ᐊᒑᐦᑯᓯᐃᐧᐤ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "it is a star"
+        }, {
+          "definition": "s/he is a star (e.g. in movies, sports, music, etc.)"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acâhkosiwiw",
+      "sro": "acâhkosiwiw",
+      "syll": "ᐊᒑᐦᑯᓯᐃᐧᐤ"
+    },
+    "lemma": {
+      "proto": "acâhkosiwiw",
+      "sro": "acâhkosiwiw",
+      "syll": "ᐊᒑᐦᑯᓯᐃᐧᐤ"
+    },
+    "pos": "VAI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["buy", "little", "some"],
+        "original": "\\sro acâwêsiw\r\n\\syl ᐊᒑᐁᐧᓯᐤ\r\n\\ps VAI-1\r\n\\def s/he buys a little (of it), s/he buys some (of it)\r\n\\dl Cree: pC\r\n\\gr1 Independent, 3s; diminutive\r\n\\stm acâwêsi-\r\n\\drv atâwê- + /-si/\r\n\\mrp /atâw-/\r\n\\mrp /-ê/-2\r\n\\mrp /-si/\r\n\\alt acâwêw\r\n\\rel\r\n\\sem\r\n\\gl buy\r\n\\gl little\r\n\\gl some\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src W&A\r\n\\new new\r\n\\dt 09/Jul/2021",
+        "pos": "VAI-1",
+        "head": {
+          "proto": "acâwêsiw",
+          "sro": "acâwêsiw",
+          "syll": "ᐊᒑᐁᐧᓯᐤ"
+        },
+        "lemma": {
+          "proto": "acâwêsiw",
+          "sro": "acâwêsiw",
+          "syll": "ᐊᒑᐁᐧᓯᐤ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "s/he buys a little (of it), s/he buys some (of it)"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acâwêsiw",
+      "sro": "acâwêsiw",
+      "syll": "ᐊᒑᐁᐧᓯᐤ"
+    },
+    "lemma": {
+      "proto": "acâwêsiw",
+      "sro": "acâwêsiw",
+      "syll": "ᐊᒑᐁᐧᓯᐤ"
+    },
+    "pos": "VAI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["store", "shop", "little"],
+        "original": "\\sro acâwêwikamikos\r\n\\syl ᐊᒑᐁᐧᐃᐧᑲᒥᑯᐢ\r\n\\ps NI-1\r\n\\def little store, shop\r\n\\dl Cree: pC\r\n\\gr1 singular; diminutive\r\n\\stm acâwêwikamikos-\r\n\\drv atâwêwikamikw- + /-is/\r\n\\mrp /atâw-/\r\n\\mrp /-ê/-2\r\n\\mrp [wi]\r\n\\mrp /-kamikw/\r\n\\mrp /-is/\r\n\\alt\r\n\\rel atâwêwikamik\r\n\\sem Shelter\r\n\\gl store\r\n\\gl shop\r\n\\gl little\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AC\r\n\\dt 09/Jul/2021",
+        "pos": "NI-1",
+        "head": {
+          "proto": "acâwêwikamikos",
+          "sro": "acâwêwikamikos",
+          "syll": "ᐊᒑᐁᐧᐃᐧᑲᒥᑯᐢ"
+        },
+        "lemma": {
+          "proto": "acâwêwikamikos",
+          "sro": "acâwêwikamikos",
+          "syll": "ᐊᒑᐁᐧᐃᐧᑲᒥᑯᐢ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "little store, shop"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acâwêwikamikos",
+      "sro": "acâwêwikamikos",
+      "syll": "ᐊᒑᐁᐧᐃᐧᑲᒥᑯᐢ"
+    },
+    "lemma": {
+      "proto": "acâwêwikamikos",
+      "sro": "acâwêwikamikos",
+      "syll": "ᐊᒑᐁᐧᐃᐧᑲᒥᑯᐢ"
+    },
+    "pos": "NI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["beginning", "begin to", "progressively", "proceed to", "go on", "on the way"],
+        "original": "\\sro aci-\r\n\\syl ᐊᒋ\r\n\\ps IPV\r\n\\def begin to, beginning; progressively, proceed to, going on, progressing; on the way\r\n\\dl Cree: pC\r\n\\gr1 diminutive\r\n\\stm\r\n\\drv ati-\r\n\\mrp ati-\r\n\\alt ati-\r\n\\rel\r\n\\sem\r\n\\gl beginning\r\n\\gl begin to\r\n\\gl progressively\r\n\\gl proceed to\r\n\\gl go on\r\n\\gl on the way\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AA\r\n\\new new\r\n\\dt 05/Apr/2016",
+        "pos": "IPV",
+        "head": {
+          "proto": "aci-",
+          "sro": "aci-",
+          "syll": "ᐊᒋ"
+        },
+        "lemma": {
+          "proto": "aci-",
+          "sro": "aci-",
+          "syll": "ᐊᒋ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "begin to, beginning"
+        }, {
+          "definition": "progressively, proceed to, going on, progressing"
+        }, {
+          "definition": "on the way"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "aci-",
+      "sro": "aci-",
+      "syll": "ᐊᒋ"
+    },
+    "lemma": {
+      "proto": "aci-",
+      "sro": "aci-",
+      "syll": "ᐊᒋ"
+    },
+    "pos": "IPV"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["head", "down", "head down", "upside down"],
+        "original": "\\sro acici\r\n\\syl ᐊᒋᒋ\r\n\\ps IPC\r\n\\def head down; upside down\r\n\\dl Cree: pC\r\n\\gr1\r\n\\stm\r\n\\drv /acit-/ + /-i/\r\n\\mrp /acit-/\r\n\\mrp /-i/\r\n\\alt\r\n\\rel âpoci\r\n\\sem Position\r\n\\gl head\r\n\\gl down\r\n\\gl head down\r\n\\gl upside down\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AN\r\n\\src LB\r\n\\dt 13/Jul/2021",
+        "pos": "IPC",
+        "head": {
+          "proto": "acici",
+          "sro": "acici",
+          "syll": "ᐊᒋᒋ"
+        },
+        "lemma": {
+          "proto": "acici",
+          "sro": "acici",
+          "syll": "ᐊᒋᒋ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "head down"
+        }, {
+          "definition": "upside down"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acici",
+      "sro": "acici",
+      "syll": "ᐊᒋᒋ"
+    },
+    "lemma": {
+      "proto": "acici",
+      "sro": "acici",
+      "syll": "ᐊᒋᒋ"
+    },
+    "pos": "IPC"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["head", "down", "head down", "upside down"],
+        "original": "\\sro acici-\r\n\\syl ᐊᒋᒋ\r\n\\ps IPV\r\n\\def head down; upside down\r\n\\dl Cree: pC\r\n\\gr1\r\n\\stm\r\n\\drv /acit-/ + /-i/\r\n\\mrp /acit-/\r\n\\mrp /-i/\r\n\\alt\r\n\\rel âpoci-\r\n\\sem Position\r\n\\gl head\r\n\\gl down\r\n\\gl head down\r\n\\gl upside down\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AN\r\n\\src LB\r\n\\dt 13/Aug/2020",
+        "pos": "IPV",
+        "head": {
+          "proto": "acici-",
+          "sro": "acici-",
+          "syll": "ᐊᒋᒋ"
+        },
+        "lemma": {
+          "proto": "acici-",
+          "sro": "acici-",
+          "syll": "ᐊᒋᒋ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "head down"
+        }, {
+          "definition": "upside down"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acici-",
+      "sro": "acici-",
+      "syll": "ᐊᒋᒋ"
+    },
+    "lemma": {
+      "proto": "acici-",
+      "sro": "acici-",
+      "syll": "ᐊᒋᒋ"
+    },
+    "pos": "IPV"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["throw", "top", "down", "bent", "position"],
+        "original": "\\sro acici-wêpinam\r\n\\syl ᐊᒋᒋ ᐁᐧᐱᓇᒼ\r\n\\ps VTI-1\r\n\\def s/he throws s.t. top down, in bent position\r\n\\dl Cree: pC\r\n\\gr1 Independent, 3s-0'\r\n\\stm acici-wêpin-\r\n\\drv acici- + wêpin-\r\n\\mrp /acit-/\r\n\\mrp /-i/\r\n\\mrp /wêp-/\r\n\\mrp /-n/-1\r\n\\alt\r\n\\rel wêpinam\r\n\\sem Action\r\n\\sem Position\r\n\\gl throw\r\n\\gl top\r\n\\gl down\r\n\\gl bent\r\n\\gl position\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AN\r\n\\dt 13/Aug/2020",
+        "pos": "VTI-1",
+        "head": {
+          "proto": "acici-wêpinam",
+          "sro": "acici-wêpinam",
+          "syll": "ᐊᒋᒋ ᐁᐧᐱᓇᒼ"
+        },
+        "lemma": {
+          "proto": "acici-wêpinam",
+          "sro": "acici-wêpinam",
+          "syll": "ᐊᒋᒋ ᐁᐧᐱᓇᒼ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "s/he throws s.t. top down, in bent position"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acici-wêpinam",
+      "sro": "acici-wêpinam",
+      "syll": "ᐊᒋᒋ ᐁᐧᐱᓇᒼ"
+    },
+    "lemma": {
+      "proto": "acici-wêpinam",
+      "sro": "acici-wêpinam",
+      "syll": "ᐊᒋᒋ ᐁᐧᐱᓇᒼ"
+    },
+    "pos": "VTI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["throw", "head", "first", "head first", "bent", "position"],
+        "original": "\\sro acici-wêpinêw\r\n\\syl ᐊᒋᒋ ᐁᐧᐱᓀᐤ\r\n\\ps VTA-1\r\n\\def s/he throws s.o. head first, in bent position\r\n\\dl Cree: pC\r\n\\gr1 Independent, 3s-4\r\n\\stm acici-wêpin-\r\n\\drv acici- + wêpin-\r\n\\mrp /acit-/\r\n\\mrp /-i/\r\n\\mrp /wêp-/\r\n\\drv /-n/\r\n\\alt\r\n\\rel wêpinêw\r\n\\sem Action\r\n\\sem Position\r\n\\gl throw\r\n\\gl head\r\n\\gl first\r\n\\gl head first\r\n\\gl bent\r\n\\gl position\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AN\r\n\\dt 13/Aug/2020",
+        "pos": "VTA-1",
+        "head": {
+          "proto": "acici-wêpinêw",
+          "sro": "acici-wêpinêw",
+          "syll": "ᐊᒋᒋ ᐁᐧᐱᓀᐤ"
+        },
+        "lemma": {
+          "proto": "acici-wêpinêw",
+          "sro": "acici-wêpinêw",
+          "syll": "ᐊᒋᒋ ᐁᐧᐱᓀᐤ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "s/he throws s.o. head first, in bent position"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acici-wêpinêw",
+      "sro": "acici-wêpinêw",
+      "syll": "ᐊᒋᒋ ᐁᐧᐱᓀᐤ"
+    },
+    "lemma": {
+      "proto": "acici-wêpinêw",
+      "sro": "acici-wêpinêw",
+      "syll": "ᐊᒋᒋ ᐁᐧᐱᓀᐤ"
+    },
+    "pos": "VTA-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["stand", "bent", "over", "bent over"],
+        "original": "\\sro acicikâpawiw\r\n\\syl ᐊᒋᒋᑳᐸᐃᐧᐤ\r\n\\ps VAI-1\r\n\\def s/he stands bent over\r\n\\dl Cree: pC\r\n\\gr1 Independent, 3s\r\n\\stm acicikâpawi-\r\n\\drv acici- + /-kâpawi/\r\n\\mrp /acit-/\r\n\\mrp /-kâpawi/\r\n\\alt\r\n\\rel\r\n\\sem Position\r\n\\gl stand\r\n\\gl bent\r\n\\gl over\r\n\\gl bent over\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AN\r\n\\dt 13/Aug/2020",
+        "pos": "VAI-1",
+        "head": {
+          "proto": "acicikâpawiw",
+          "sro": "acicikâpawiw",
+          "syll": "ᐊᒋᒋᑳᐸᐃᐧᐤ"
+        },
+        "lemma": {
+          "proto": "acicikâpawiw",
+          "sro": "acicikâpawiw",
+          "syll": "ᐊᒋᒋᑳᐸᐃᐧᐤ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "s/he stands bent over"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acicikâpawiw",
+      "sro": "acicikâpawiw",
+      "syll": "ᐊᒋᒋᑳᐸᐃᐧᐤ"
+    },
+    "lemma": {
+      "proto": "acicikâpawiw",
+      "sro": "acicikâpawiw",
+      "syll": "ᐊᒋᒋᑳᐸᐃᐧᐤ"
+    },
+    "pos": "VAI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["throw", "head", "first", "head first", "fall", "forward", "somersault", "all fours"],
+        "original": "\\sro acicipaýihow\r\n\\syl ᐊᒋᒋᐸᔨᐦᐅᐤ\r\n\\ps VAI-1\r\n\\def s/he throws him/herself head first, falling forward; s/he throws him/herself on all fours; s/he somersaults\r\n\\dl Cree: pC\r\n\\gr1 Independent, 3s\r\n\\stm acicipaýiho-\r\n\\drv acici- + /-paýiho/\r\n\\mrp /acit-/\r\n\\mrp /-paýi/\r\n\\mrp /-h/\r\n\\mrp /-o/\r\n\\alt\r\n\\rel\r\n\\sem Action\r\n\\sem Position\r\n\\gl throw\r\n\\gl head\r\n\\gl first\r\n\\gl head first\r\n\\gl fall\r\n\\gl forward\r\n\\gl somersault\r\n\\gl all fours\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src DOa\r\n\\src JO\r\n\\src LB\r\n\\dt 13/Aug/2020",
+        "pos": "VAI-1",
+        "head": {
+          "proto": "acicipaýihow",
+          "sro": "acicipayihow",
+          "syll": "ᐊᒋᒋᐸᔨᐦᐅᐤ"
+        },
+        "lemma": {
+          "proto": "acicipaýihow",
+          "sro": "acicipayihow",
+          "syll": "ᐊᒋᒋᐸᔨᐦᐅᐤ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "s/he throws him/herself head first, falling forward"
+        }, {
+          "definition": "s/he throws him/herself on all fours"
+        }, {
+          "definition": "s/he somersaults"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acicipaýihow",
+      "sro": "acicipayihow",
+      "syll": "ᐊᒋᒋᐸᔨᐦᐅᐤ"
+    },
+    "lemma": {
+      "proto": "acicipaýihow",
+      "sro": "acicipayihow",
+      "syll": "ᐊᒋᒋᐸᔨᐦᐅᐤ"
+    },
+    "pos": "VAI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["fall", "head", "first", "head first", "bent", "forward", "bent forward"],
+        "original": "\\sro acicipaýiw\r\n\\syl ᐊᒋᒋᐸᔨᐤ\r\n\\ps VAI-1\r\n\\def s/he falls head first, s/he falls bent forward\r\n\\dl Cree: pC\r\n\\gr1 Independent, 3s\r\n\\stm acicipaýi-\r\n\\drv acici- + /-paýi/\r\n\\mrp /acit-/\r\n\\mrp /-paýi/\r\n\\alt\r\n\\rel\r\n\\sem Process\r\n\\sem Position\r\n\\gl fall\r\n\\gl head\r\n\\gl first\r\n\\gl head first\r\n\\gl bent\r\n\\gl forward\r\n\\gl bent forward\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src AN\r\n\\dt 14/Aug/2020",
+        "pos": "VAI-1",
+        "head": {
+          "proto": "acicipaýiw",
+          "sro": "acicipayiw",
+          "syll": "ᐊᒋᒋᐸᔨᐤ"
+        },
+        "lemma": {
+          "proto": "acicipaýiw",
+          "sro": "acicipayiw",
+          "syll": "ᐊᒋᒋᐸᔨᐤ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "s/he falls head first, s/he falls bent forward"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acicipaýiw",
+      "sro": "acicipayiw",
+      "syll": "ᐊᒋᒋᐸᔨᐤ"
+    },
+    "lemma": {
+      "proto": "acicipaýiw",
+      "sro": "acicipayiw",
+      "syll": "ᐊᒋᒋᐸᔨᐤ"
+    },
+    "pos": "VAI-1"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["lie", "head", "down", "face", "away"],
+        "original": "\\sro acicisin\r\n\\syl ᐊᒋᒋᓯᐣ\r\n\\ps VAI-2\r\n\\def s/he lies with head down or facing away\r\n\\dl Cree: pC\r\n\\gr1 Independent, 3s\r\n\\stm acicisin-\r\n\\drv acici- + /-sin/\r\n\\mrp /acit-/\r\n\\mrp /-sin/\r\n\\alt\r\n\\rel acitisin\r\n\\sem Position\r\n\\gl lie\r\n\\gl head\r\n\\gl down\r\n\\gl face\r\n\\gl away\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src LB\r\n\\dt 14/Aug/2020",
+        "pos": "VAI-2",
+        "head": {
+          "proto": "acicisin",
+          "sro": "acicisin",
+          "syll": "ᐊᒋᒋᓯᐣ"
+        },
+        "lemma": {
+          "proto": "acicisin",
+          "sro": "acicisin",
+          "syll": "ᐊᒋᒋᓯᐣ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "s/he lies with head down or facing away"
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "acicisin",
+      "sro": "acicisin",
+      "syll": "ᐊᒋᒋᓯᐣ"
+    },
+    "lemma": {
+      "proto": "acicisin",
+      "sro": "acicisin",
+      "syll": "ᐊᒋᒋᓯᐣ"
+    },
+    "pos": "VAI-2"
+  },
+  {
+    "dataSources": {
+      "CW": {
+        "glosses": ["arrive", "ahead"],
+        "original": "\\sro aciciwihêw\r\n\\syl ᐊᒋᒋᐃᐧᐦᐁᐤ\r\n\\ps VTA-1\r\n\\def s/he arrives ahead of s.o.\r\n\\dl Cree: pC\r\n\\gr1 Independent, 3s-4\r\n\\stm aciciwih-\r\n\\drv\r\n\\mrp /acit-/\r\n\\mrp /-wih/\r\n\\alt\r\n\\rel\r\n\\sem Action\r\n\\sem Position\r\n\\gl arrive\r\n\\gl ahead\r\n\\cat\r\n\\his\r\n\\gr2\r\n\\src\r\n\\dt 14/May/2021",
+        "pos": "VTA-1",
+        "head": {
+          "proto": "aciciwihêw",
+          "sro": "aciciwihêw",
+          "syll": "ᐊᒋᒋᐃᐧᐦᐁᐤ"
+        },
+        "lemma": {
+          "proto": "aciciwihêw",
+          "sro": "aciciwihêw",
+          "syll": "ᐊᒋᒋᐃᐧᐦᐁᐤ"
+        },
+        "dialects": ["plai1258"],
+        "senses": [{
+          "definition": "s/he arrives ahead of s.o."
+        }],
+        "matched": true
+      }
+    },
+    "head": {
+      "proto": "aciciwihêw",
+      "sro": "aciciwihêw",
+      "syll": "ᐊᒋᒋᐃᐧᐦᐁᐤ"
+    },
+    "lemma": {
+      "proto": "aciciwihêw",
+      "sro": "aciciwihêw",
+      "syll": "ᐊᒋᒋᐃᐧᐦᐁᐤ"
+    },
+    "pos": "VTA-1"
+  }
+]

@@ -22,12 +22,14 @@
   },
   "type": "module",
   "scripts": {
+    "aggregate": "node bin/aggregate.js data/database.ndjson",
     "build": "node bin/buildDatabase.js",
     "clear": "node bin/clearDatabase.js",
     "test": "mocha lib/**/*.test.js test/*.test.js",
-    "test:build": "mocha lib/testBuild.js"
+    "test:build": "mocha lib/test/testBuild.js"
   },
   "bin": {
+    "aggregate": "./bin/aggregate.js",
     "convert-cw": "./bin/convert-CW.js",
     "convert-md": "./bin/convert-MD.js",
     "import-cw": "./bin/import-CW.js",

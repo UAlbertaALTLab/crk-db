@@ -14,26 +14,26 @@ import {
 const __dirname    = getDirname(fileURLToPath(import.meta.url));
 const { readFile } = promises;
 
-describe.skip('Toolbox database', function() {
+describe.skip(`Toolbox database`, function() {
 
   before(async function() {
 
     if (process.env.GITHUB_ACTIONS) {
       this.skip();
-      console.info('Skipping data integrity tests for CW Toolbox file on CI.');
+      console.info(`Skipping data integrity tests for CW Toolbox file on CI.`);
     }
 
-    const databasePath = joinPath(__dirname, '../data/Wolvengrey.toolbox');
-    this.text = await readFile(databasePath, 'utf8');
+    const databasePath = joinPath(__dirname, `../data/Wolvengrey.toolbox`);
+    this.text = await readFile(databasePath, `utf8`);
 
   });
 
-  it('does not contain curly quotes or apostrophes', function() {
+  it(`does not contain curly quotes or apostrophes`, function() {
 
-    const LEFT_SINGLE_QUOTATION_MARK  = '‘';
-    const RIGHT_SINGLE_QUOTATION_MARK = '’';
-    const LEFT_DOUBLE_QUOTATION_MARK  = '“';
-    const RIGHT_DOUBLE_QUOTATION_MARK = '”';
+    const LEFT_SINGLE_QUOTATION_MARK  = `‘`;
+    const RIGHT_SINGLE_QUOTATION_MARK = `’`;
+    const LEFT_DOUBLE_QUOTATION_MARK  = `“`;
+    const RIGHT_DOUBLE_QUOTATION_MARK = `”`;
 
     const { text } = this;
 
@@ -48,18 +48,18 @@ describe.skip('Toolbox database', function() {
     expect(this.text).to.not.include(`3'`);
   });
 
-  it('does not contain trailing semicolons at the ends of lines', function() {
+  it(`does not contain trailing semicolons at the ends of lines`, function() {
 
     this.timeout(10000);
 
-    const spinner = createSpinner('Checking for trailing semicolons.').start();
+    const spinner = createSpinner(`Checking for trailing semicolons.`).start();
 
     const lines = this.text
     .split(/\r?\n/gu)
     .map(line => line.trim());
 
     for (const line of lines) {
-      expect(line.endsWith(';')).to.be.false;
+      expect(line.endsWith(`;`)).to.be.false;
     }
 
     spinner.succeed();
