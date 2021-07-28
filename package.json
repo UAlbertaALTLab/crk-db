@@ -18,11 +18,12 @@
   ],
   "private": true,
   "engines": {
-    "node": ">=14.0"
+    "node": ">=16.0"
   },
   "type": "module",
   "scripts": {
-    "aggregate":  "node bin/aggregate.js data/database.ndjson",
+    "aggregate":  "node bin/aggregate.js data/database.ndjson data/database.ndjson",
+    "prebuild":   "python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-relaxed-analyzer-for-dictionary.hfstol",
     "build":      "node bin/buildDatabase.js",
     "clear":      "node bin/clearDatabase.js",
     "test":       "mocha lib/**/*.test.js test/*.test.js",
