@@ -122,3 +122,6 @@ Wolvengrey.json
 Wolvengrey.ndjson
 Wolvengrey.toolbox
 *.hfstol
+
+# generated from typescript source
+lib/aggregate/paradigm-assignment.js

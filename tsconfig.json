@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "lib": ["ES2020"],
+    "module": "esnext",
+    "target": "esnext",
+    "noUnusedLocals": true,
+    "typeRoots": ["./node_modules/@types"]
+  }
+}
