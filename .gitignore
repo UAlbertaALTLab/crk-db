@@ -107,6 +107,7 @@ dist
 /scratch
 /data
 .eslintrc.js
+.idea
 CW.ndjson
 database.json
 database.ndjson
