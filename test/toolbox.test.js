@@ -27,6 +27,11 @@ describe(`Toolbox database`, function() {
     const databasePath = joinPath(__dirname, `../data/Wolvengrey.toolbox`);
     this.text = await readFile(databasePath, `utf8`);
 
+    const { entries, errors } = await convertCW(`data/Wolvengrey.toolbox`);
+
+    this.entries = entries;
+    this.errors  = errors;
+
   });
 
   it(`does not contain curly quotes or apostrophes`, function() {
@@ -68,8 +73,7 @@ describe(`Toolbox database`, function() {
   });
 
   it(`does not produce parsing errors`, async function() {
-    const { errors } = await convertCW(`data/Wolvengrey.toolbox`);
-    expect(errors).to.have.lengthOf(0);
+    expect(this.errors).to.have.lengthOf(0);
   });
 
 });
