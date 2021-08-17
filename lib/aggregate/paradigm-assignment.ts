@@ -215,11 +215,11 @@ export function inferAnalysis({
         throw Error("tie breaker exists but was not applied");
       }
     } else {
-      console.log(`${matches.length} matches for ${head}`);
+      // console.log(`${matches.length} matches for ${head}`);
       ok = false;
     }
   } else {
-    console.log(`${matches.length} matches for ${head}`);
+    // console.log(`${matches.length} matches for ${head}`);
     ok = false;
   }
 
