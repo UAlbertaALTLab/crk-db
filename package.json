@@ -22,11 +22,12 @@
   },
   "type": "module",
   "scripts": {
-    "aggregate": "node bin/aggregate.js data/database.ndjson data/database.ndjson",
-    "prebuild": "tsc && python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-relaxed-analyzer-for-dictionary.hfstol",
-    "build": "node bin/buildDatabase.js",
-    "clear": "node bin/clearDatabase.js",
-    "test": "mocha lib/**/*.test.js test/*.test.js",
+    "aggregate":  "node bin/aggregate.js data/database.ndjson data/database.ndjson",
+    "prebuild":   "tsc && python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-relaxed-analyzer-for-dictionary.hfstol",
+    "build":      "node bin/buildDatabase.js",
+    "clear":      "node bin/clearDatabase.js",
+    "pretest":    "tsc",
+    "test":       "mocha lib/**/*.test.js test/*.test.js",
     "test:build": "mocha lib/test/testBuild.js"
   },
   "bin": {
