@@ -1,6 +1,7 @@
 // This file contains data integrity tests for the CW Toolbox database (Wolvengrey.toolbox).
 // These tests can only be run locally (because the database should not be checked into git).
 
+import convertCW         from '../lib/convert/CW.js';
 import createSpinner     from 'ora';
 import { expect }        from 'chai';
 import { fileURLToPath } from 'url';
@@ -64,6 +65,11 @@ describe(`Toolbox database`, function() {
 
     spinner.succeed();
 
+  });
+
+  it(`does not produce parsing errors`, async function() {
+    const { errors } = await convertCW(`data/Wolvengrey.toolbox`);
+    expect(errors).to.have.lengthOf(0);
   });
 
 });
