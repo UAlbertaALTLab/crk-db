@@ -5,19 +5,23 @@ import convertCW         from '../lib/convert/CW.js';
 import createSpinner     from 'ora';
 import { expect }        from 'chai';
 import { fileURLToPath } from 'url';
-import { promises }      from 'fs';
+import fs                from 'fs-extra';
 
 import {
   dirname as getDirname,
   join    as joinPath,
-} from 'path';
+}               from 'path';
+import { join } from 'lodash-es';
 
-const __dirname    = getDirname(fileURLToPath(import.meta.url));
-const { readFile } = promises;
+const { readFile, readJSON, remove } = fs;
+
+const __dirname = getDirname(fileURLToPath(import.meta.url));
 
 describe(`Toolbox database`, function() {
 
   before(async function() {
+
+    this.timeout(5000);
 
     if (process.env.GITHUB_ACTIONS) {
       this.skip();
@@ -25,9 +29,21 @@ describe(`Toolbox database`, function() {
     }
 
     const databasePath = joinPath(__dirname, `../data/Wolvengrey.toolbox`);
-    this.text = await readFile(databasePath, `utf8`);
+    this.text          = await readFile(databasePath, `utf8`);
+
+    const { entries, errors } = await convertCW(
+      databasePath,
+      joinPath(__dirname, `./Wolvengrey.ndjson`)
+    );
+
+    this.entries = entries;
+    this.errors  = errors;
 
   });
+
+  after(async function() {
+    await remove(joinPath(__dirname, `./Wolvengrey.ndjson`));
+  })
 
   it(`does not contain curly quotes or apostrophes`, function() {
 
@@ -68,8 +84,29 @@ describe(`Toolbox database`, function() {
   });
 
   it(`does not produce parsing errors`, async function() {
-    const { errors } = await convertCW(`data/Wolvengrey.toolbox`);
-    expect(errors).to.have.lengthOf(0);
+    if (this.errors.length) console.log(this.errors);
+    expect(this.errors).to.have.lengthOf(0);
+  });
+
+  it(`only contains valid sources`, async function() {
+
+    let attestedSources = new Set;
+
+    for (const entry of this.entries) {
+      entry.sources.forEach(src => attestedSources.add(src));
+    }
+
+    attestedSources = Array.from(attestedSources)
+    .filter(Boolean)
+    .sort();
+
+    const allowedSourcesPath = joinPath(__dirname, `../lib/constants/CW-sources.json`);
+    const allowedSources     = await readJSON(allowedSourcesPath);
+
+    for (const attestedSource of attestedSources) {
+      expect(allowedSources.includes(attestedSource)).to.be.true;
+    }
+
   });
 
 });
