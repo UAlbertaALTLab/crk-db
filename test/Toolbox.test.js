@@ -1,11 +1,12 @@
 // This file contains data integrity tests for the CW Toolbox database (Wolvengrey.toolbox).
 // These tests can only be run locally (because the database should not be checked into git).
 
-import convertCW         from '../lib/convert/CW.js';
-import createSpinner     from 'ora';
-import { expect }        from 'chai';
-import { fileURLToPath } from 'url';
-import fs                from 'fs-extra';
+import convertCW            from '../lib/convert/CW.js';
+import createSpinner        from 'ora';
+import { expect }           from 'chai';
+import { fileURLToPath }    from 'url';
+import fs                   from 'fs-extra';
+import { load as parseYAML } from 'js-yaml';
 
 import {
   dirname as getDirname,
@@ -13,7 +14,7 @@ import {
 }               from 'path';
 import { join } from 'lodash-es';
 
-const { readFile, readJSON, remove } = fs;
+const { readFile, remove } = fs;
 
 const __dirname = getDirname(fileURLToPath(import.meta.url));
 
@@ -100,11 +101,15 @@ describe(`Toolbox database`, function() {
     .filter(Boolean)
     .sort();
 
-    const allowedSourcesPath = joinPath(__dirname, `../lib/constants/CW-sources.json`);
-    const allowedSources     = await readJSON(allowedSourcesPath);
+    const sourcesInfoPath = joinPath(__dirname, `../lib/constants/CW-sources.yml`);
+    const yaml            = await readFile(sourcesInfoPath);
+    const sourcesInfo     = parseYAML(yaml);
+    const allowedSources  = Object.keys(sourcesInfo);
 
     for (const attestedSource of attestedSources) {
-      expect(allowedSources.includes(attestedSource)).to.be.true;
+      const sourceAllowed = allowedSources.includes(attestedSource);
+      if (!sourceAllowed) console.log(attestedSource);
+      expect(sourceAllowed).to.be.true;
     }
 
   });

@@ -22,12 +22,12 @@
   },
   "type": "module",
   "scripts": {
-    "aggregate":  "node bin/aggregate.js data/database.ndjson data/database.ndjson",
-    "prebuild":   "tsc && python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-relaxed-analyzer-for-dictionary.hfstol",
-    "build":      "node bin/buildDatabase.js",
-    "clear":      "node bin/clearDatabase.js",
-    "pretest":    "tsc",
-    "test":       "mocha lib/**/*.test.js test/*.test.js",
+    "aggregate": "node bin/aggregate.js data/database.ndjson data/database.ndjson",
+    "prebuild": "tsc && python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-relaxed-analyzer-for-dictionary.hfstol",
+    "build": "node bin/buildDatabase.js",
+    "clear": "node bin/clearDatabase.js",
+    "pretest": "tsc",
+    "test": "mocha lib/**/*.test.js test/*.test.js",
     "test:build": "mocha lib/test/testBuild.js"
   },
   "bin": {
@@ -53,6 +53,7 @@
     "eslint-plugin-chai-friendly": "^0.6.0",
     "fs-extra": "^10.0.0",
     "hfstol": "^0.0.3",
+    "js-yaml": "^4.1.0",
     "lodash-es": "^4.17.21",
     "mocha": "^8.3.2",
     "ndjson": "^2.0.0",
