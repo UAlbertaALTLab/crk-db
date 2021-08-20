@@ -3,12 +3,20 @@
     "fst": {
       "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+3Sg"]],
       "lemma":    "nîmiw"
+    },
+    "head": {
+      "proto": "nîmiw",
+      "sro":   "nîmiw"
     }
   },
   {
     "fst": {
       "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+X"]],
       "lemma":    "nîmiw"
+    },
+    "head": {
+      "proto": "nîminâniwan",
+      "sro":   "nîminâniwan"
     },
     "lexicalRelations": [
       {
@@ -20,6 +28,9 @@
   {
     "fst": {
       "lemma": "noohow"
+    },
+    "head": {
+      "stan": "nóóhow-"
     }
   }
 ]
