@@ -7,7 +7,8 @@
     "head": {
       "proto": "nîmiw",
       "sro":   "nîmiw"
-    }
+    },
+    "paradigm": "VAI"
   },
   {
     "fst": {
@@ -23,7 +24,8 @@
         "key":          "nîmiw",
         "relationType": "formOf"
       }
-    ]
+    ],
+    "paradigm": null
   },
   {
     "fst": {
@@ -31,6 +33,7 @@
     },
     "head": {
       "stan": "nóóhow-"
-    }
+    },
+    "paradigm": "TA"
   }
 ]
