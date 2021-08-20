@@ -4,5 +4,16 @@
       "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+3Sg"]]
     }
   },
+  {
+    "fst": {
+      "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+X"]]
+    },
+    "lexicalRelations": [
+      {
+        "key":          "nîmiw",
+        "relationType": "formOf"
+      }
+    ]
+  },
   {}
 ]
