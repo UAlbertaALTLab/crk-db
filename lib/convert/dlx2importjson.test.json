@@ -1,12 +1,14 @@
 [
   {
     "fst": {
-      "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+3Sg"]]
+      "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+3Sg"]],
+      "lemma":    "nîmiw"
     }
   },
   {
     "fst": {
-      "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+X"]]
+      "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+X"]],
+      "lemma":    "nîmiw"
     },
     "lexicalRelations": [
       {
@@ -15,5 +17,9 @@
       }
     ]
   },
-  {}
+  {
+    "fst": {
+      "lemma": "noohow"
+    }
+  }
 ]
