@@ -1,39 +1,52 @@
 [
   {
+    "category": "VAI-1",
     "fst": {
       "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+3Sg"]],
-      "lemma":    "nîmiw"
+      "lemma":    "nîmiw",
+      "stem":     "nîmi-"
     },
     "head": {
       "proto": "nîmiw",
       "sro":   "nîmiw"
     },
-    "paradigm": "VAI"
+    "key": "nîmiw@1",
+    "paradigm": "VAI",
+    "senses": [
+      {
+        "definition": "s/he dances",
+        "sources": ["CW"]
+      },
+      {
+        "definition": "second, fake definitions",
+        "sources": ["AB", "CD"]
+      }
+    ]
   },
   {
+    "category": "VAI-1",
     "fst": {
       "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+X"]],
-      "lemma":    "nîmiw"
+      "lemma":    "nîmiw",
+      "stem":     "nîmi-"
     },
     "head": {
       "proto": "nîminâniwan",
       "sro":   "nîminâniwan"
     },
+    "key": "nîminâniwan",
     "lexicalRelations": [
       {
         "key":          "nîmiw",
         "relationType": "formOf"
       }
     ],
-    "paradigm": null
-  },
-  {
-    "fst": {
-      "lemma": "noohow"
-    },
-    "head": {
-      "stan": "nóóhow-"
-    },
-    "paradigm": "TA"
+    "paradigm": null,
+    "senses": [
+      {
+        "definition": "there is a dance, it is a time of dancing",
+        "sources": ["CW"]
+      }
+    ]
   }
 ]
