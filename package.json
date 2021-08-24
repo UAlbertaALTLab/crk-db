@@ -23,8 +23,10 @@
   "type": "module",
   "scripts": {
     "aggregate": "node bin/aggregate.js data/database.ndjson data/database.ndjson",
-    "prebuild": "tsc && python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-relaxed-analyzer-for-dictionary.hfstol",
+    "prebuild": "tsc && npm run build:relax-fst && npm run build:strict-fst",
     "build": "node bin/buildDatabase.js",
+    "build:relax-fst": "python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-relaxed-analyzer-for-dictionary.hfstol",
+    "build:strict-fst": "python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-strict-analyzer-for-dictionary.hfstol",
     "clear": "node bin/clearDatabase.js",
     "pretest": "tsc",
     "test": "mocha lib/**/*.test.js test/*.test.js",
