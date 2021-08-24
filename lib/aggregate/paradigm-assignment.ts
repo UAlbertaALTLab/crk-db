@@ -13,16 +13,9 @@ export type NdjsonEntry = {
       pos?: string;
     };
   };
+  fst: { analysis?: Analysis };
   head: { proto?: string; sro?: string };
-  analysis?: Analysis;
   paradigm?: string | null;
-  linguistInfo?: CreeLinguistInfo;
-};
-
-export type CreeLinguistInfo = {
-  pos?: string | null;
-  inflectional_category?: string;
-  wordclass?: string | null;
 };
 
 export const PERSONAL_PRONOUNS = new Set([
@@ -64,53 +57,6 @@ const TIE_BREAKERS = [
   ["niska+N+A+Sg", "niska+N+A+Obv"],
   ["môswa+N+A+Sg", "môswa+N+A+Obv"],
 ];
-
-function posFromInflectionalCategory(inflectionalCategory: string) {
-  // this matches what the xml/CreeDictionary python code did;
-  // it might be better to extract this from the tags
-
-  if (inflectionalCategory.startsWith("N")) {
-    return "N";
-  }
-  if (inflectionalCategory.startsWith("V")) {
-    return "V";
-  }
-  if (inflectionalCategory === "INM") {
-    return "N";
-  }
-  if (inflectionalCategory.startsWith("I")) {
-    return "IPC";
-  }
-  if (inflectionalCategory.toUpperCase().startsWith("PR")) {
-    return "PRON";
-  }
-  return null;
-}
-
-function wordClassFromInflectionalCategory(inflectionalCategory: string) {
-  for (let { prefix, wordClassOverride } of [
-    // If the inflectional category starts with the given prefix, use that
-    // prefix as the word class, unless wordClassOverride is given, in which
-    // case use that instead.
-    //
-    // This list is examiend in sequential order.
-    { prefix: "NDI", wordClassOverride: "NID" },
-    { prefix: "NDA", wordClassOverride: "NAD" },
-    { prefix: "NI" },
-    { prefix: "NA" },
-    { prefix: "PR", wordClassOverride: "PRON" },
-    { prefix: "VAI" },
-    { prefix: "VII" },
-    { prefix: "VTA" },
-    { prefix: "VTI" },
-    { prefix: "I", wordClassOverride: "IPC" },
-  ]) {
-    if (inflectionalCategory.toUpperCase().startsWith(prefix)) {
-      return wordClassOverride ?? prefix;
-    }
-  }
-  return null;
-}
 
 function getTieBreaker(analyses: Analysis[]) {
   // FIXME: on all but tiny input dictionaries, tieBreakers should be turned
@@ -331,27 +277,21 @@ function doAssignment(entries: NdjsonEntry[]) {
       }
 
       if (ok) {
-        entry.analysis = analysis;
-        entry.paradigm = paradigm;
+
+        entry.fst          ??= {};
+        entry.fst.analysis   = analysis;
+        entry.paradigm       = paradigm;
 
         if (entry.paradigm === "demonstrative-pronouns") {
           unusedDemonstrativePronouns.delete(head);
         } else if (entry.paradigm === "personal-pronouns") {
           unusedPersonalPronouns.delete(head);
         }
+
       }
+
     }
 
-    const linguistInfo: CreeLinguistInfo = {};
-    if (pos) {
-      linguistInfo.inflectional_category = pos;
-      // pos in the toolbox/ndjson has a different meaning from in the python
-      // code
-      linguistInfo.pos = posFromInflectionalCategory(pos);
-      linguistInfo.wordclass = wordClassFromInflectionalCategory(pos);
-    }
-
-    entry.linguistInfo = linguistInfo;
   }
 
   if (unusedDemonstrativePronouns.size !== 0) {
