@@ -1,227 +1,227 @@
 {
   "INM": {
-    "inflectional_category":"INM",
-    "pos": "PART",
-    "wordclass": "INM"
+    "inflectionalCategory":"INM",
+    "pos": "Ipc",
+    "wordClass": "INM"
   },
   "IPC": {
-    "inflectional_category": "IPC",
-    "pos": "PART",
-    "wordclass": "IPC"
+    "inflectionalCategory": "IPC",
+    "pos": "Ipc",
+    "wordClass": "IPC"
   },
   "IPH": {
-    "inflectional_category": "IPH",
-    "pos": "PART",
-    "wordclass": "IPH"
+    "inflectionalCategory": "IPH",
+    "pos": "Ipc",
+    "wordClass": "IPH"
   },
   "IPJ": {
-    "inflectional_category": "IPJ",
-    "pos": "PART",
-    "wordclass": "IPJ"
+    "inflectionalCategory": "IPJ",
+    "pos": "Ipc",
+    "wordClass": "IPJ"
   },
   "NA-1": {
-    "inflectional_category": "NA-1",
+    "inflectionalCategory": "NA-1",
     "pos": "N",
-    "wordclass": "NA"
+    "wordClass": "NA"
   },
   "NA-2": {
-    "inflectional_category": "NA-2",
+    "inflectionalCategory": "NA-2",
     "pos": "N",
-    "wordclass": "NA"
+    "wordClass": "NA"
   },
   "NA-3": {
-    "inflectional_category": "NA-3",
+    "inflectionalCategory": "NA-3",
     "pos": "N",
-    "wordclass": "NA"
+    "wordClass": "NA"
   },
   "NA-4": {
-    "inflectional_category": "NA-4",
+    "inflectionalCategory": "NA-4",
     "pos": "N",
-    "wordclass": "NA"
+    "wordClass": "NA"
   },
   "NA-4w": {
-    "inflectional_category": "NA-4w",
+    "inflectionalCategory": "NA-4w",
     "pos": "N",
-    "wordclass": "NA"
+    "wordClass": "NA"
   },
   "NDA-1": {
-    "inflectional_category": "NDA-1",
+    "inflectionalCategory": "NDA-1",
     "pos": "N",
-    "wordclass": "NDA"
+    "wordClass": "NDA"
   },
   "NDA-2": {
-    "inflectional_category": "NDA-2",
+    "inflectionalCategory": "NDA-2",
     "pos": "N",
-    "wordclass": "NDA"
+    "wordClass": "NDA"
   },
   "NDA-3": {
-    "inflectional_category": "NDA-3",
+    "inflectionalCategory": "NDA-3",
     "pos": "N",
-    "wordclass": "NDA"
+    "wordClass": "NDA"
   },
   "NDA-4": {
-    "inflectional_category": "NDA-4",
+    "inflectionalCategory": "NDA-4",
     "pos": "N",
-    "wordclass": "NDA"
+    "wordClass": "NDA"
   },
   "NDA-4w": {
-    "inflectional_category": "NDA-4w",
+    "inflectionalCategory": "NDA-4w",
     "pos": "N",
-    "wordclass": "NDA"
+    "wordClass": "NDA"
   },
   "NDI-1": {
-    "inflectional_category": "NDI-1",
+    "inflectionalCategory": "NDI-1",
     "pos": "N",
-    "wordclass": "NDI"
+    "wordClass": "NDI"
   },
   "NDI-2": {
-    "inflectional_category": "NDI-2",
+    "inflectionalCategory": "NDI-2",
     "pos": "N",
-    "wordclass": "NDI"
+    "wordClass": "NDI"
   },
   "NDI-3": {
-    "inflectional_category": "NDI-3",
+    "inflectionalCategory": "NDI-3",
     "pos": "N",
-    "wordclass": "NDI"
+    "wordClass": "NDI"
   },
   "NDI-3": {
-    "inflectional_category": "NDI-3",
+    "inflectionalCategory": "NDI-3",
     "pos": "N",
-    "wordclass": "NDI"
+    "wordClass": "NDI"
   },
   "NDI-4": {
-    "inflectional_category": "NDI-4",
+    "inflectionalCategory": "NDI-4",
     "pos": "N",
-    "wordclass": "NDI"
+    "wordClass": "NDI"
   },
   "NDI-5": {
-    "inflectional_category": "NDI-5",
+    "inflectionalCategory": "NDI-5",
     "pos": "N",
-    "wordclass": "NDI"
+    "wordClass": "NDI"
   },
   "NI-1": {
-    "inflectional_category": "NI-1",
+    "inflectionalCategory": "NI-1",
     "pos": "N",
-    "wordclass": "NI"
+    "wordClass": "NI"
   },
   "NI-2": {
-    "inflectional_category": "NI-2",
+    "inflectionalCategory": "NI-2",
     "pos": "N",
-    "wordclass": "NI"
+    "wordClass": "NI"
   },
   "NI-3": {
-    "inflectional_category": "NI-3",
+    "inflectionalCategory": "NI-3",
     "pos": "N",
-    "wordclass": "NI"
+    "wordClass": "NI"
   },
   "NI-4": {
-    "inflectional_category": "NI-4",
+    "inflectionalCategory": "NI-4",
     "pos": "N",
-    "wordclass": "NI"
+    "wordClass": "NI"
   },
   "NI-4w": {
-    "inflectional_category": "NI-4w",
+    "inflectionalCategory": "NI-4w",
     "pos": "N",
-    "wordclass": "NI"
+    "wordClass": "NI"
   },
   "NI-5": {
-    "inflectional_category": "NI-5",
+    "inflectionalCategory": "NI-5",
     "pos": "N",
-    "wordclass": "NI"
+    "wordClass": "NI"
   },
   "PrA": {
-    "inflectional_category": "PrA",
-    "pos": "PRON",
-    "wordclass": "PrA"
+    "inflectionalCategory": "PrA",
+    "pos": "Pron",
+    "wordClass": "PrA"
   },
   "VAI": {
-    "inflectional_category": "VAI",
+    "inflectionalCategory": "VAI",
     "pos": "V",
-    "wordclass": "VAI"
+    "wordClass": "VAI"
   },
   "VAI-1": {
-    "inflectional_category": "VAI-1",
+    "inflectionalCategory": "VAI-1",
     "pos": "V",
-    "wordclass": "VAI"
+    "wordClass": "VAI"
   },
   "VAI-2": {
-    "inflectional_category": "VAI-2",
+    "inflectionalCategory": "VAI-2",
     "pos": "V",
-    "wordclass": "VAI"
+    "wordClass": "VAI"
   },
   "VAI-3": {
-    "inflectional_category": "VAI-3",
+    "inflectionalCategory": "VAI-3",
     "pos": "V",
-    "wordclass": "VAI"
+    "wordClass": "VAI"
   },
   "VII-1n": {
-    "inflectional_category": "VII-1n",
+    "inflectionalCategory": "VII-1n",
     "pos": "V",
-    "wordclass": "VII"
+    "wordClass": "VII"
   },
   "VII-1v": {
-    "inflectional_category": "VII-1v",
+    "inflectionalCategory": "VII-1v",
     "pos": "V",
-    "wordclass": "VII"
+    "wordClass": "VII"
   },
   "VII-2n": {
-    "inflectional_category": "VII-2n",
+    "inflectionalCategory": "VII-2n",
     "pos": "V",
-    "wordclass": "VII"
+    "wordClass": "VII"
   },
   "VII-2v": {
-    "inflectional_category": "VII-2v",
+    "inflectionalCategory": "VII-2v",
     "pos": "V",
-    "wordclass": "VII"
+    "wordClass": "VII"
   },
   "VII-n": {
-    "inflectional_category": "VII-n",
+    "inflectionalCategory": "VII-n",
     "pos": "V",
-    "wordclass": "VII"
+    "wordClass": "VII"
   },
   "VII-v": {
-    "inflectional_category": "VII-v",
+    "inflectionalCategory": "VII-v",
     "pos": "V",
-    "wordclass": "VII"
+    "wordClass": "VII"
   },
   "VTA-1": {
-    "inflectional_category": "VTA-1",
+    "inflectionalCategory": "VTA-1",
     "pos": "V",
-    "wordclass": "VTA"
+    "wordClass": "VTA"
   },
   "VTA-2": {
-    "inflectional_category": "VTA-2",
+    "inflectionalCategory": "VTA-2",
     "pos": "V",
-    "wordclass": "VTA"
+    "wordClass": "VTA"
   },
   "VTA-3": {
-    "inflectional_category": "VTA-3",
+    "inflectionalCategory": "VTA-3",
     "pos": "V",
-    "wordclass": "VTA"
+    "wordClass": "VTA"
   },
   "VTA-4": {
-    "inflectional_category": "VTA-4",
+    "inflectionalCategory": "VTA-4",
     "pos": "V",
-    "wordclass": "VTA"
+    "wordClass": "VTA"
   },
   "VTA-5": {
-    "inflectional_category": "VTA-5",
+    "inflectionalCategory": "VTA-5",
     "pos": "V",
-    "wordclass": "VTA"
+    "wordClass": "VTA"
   },
   "VTI-1": {
-    "inflectional_category": "VTI-1",
+    "inflectionalCategory": "VTI-1",
     "pos": "V",
-    "wordclass": "VTI"
+    "wordClass": "VTI"
   },
   "VTI-2": {
-    "inflectional_category": "VTI-2",
+    "inflectionalCategory": "VTI-2",
     "pos": "V",
-    "wordclass": "VTI"
+    "wordClass": "VTI"
   },
   "VTI-3": {
-    "inflectional_category": "VTI-3",
+    "inflectionalCategory": "VTI-3",
     "pos": "V",
-    "wordclass": "VTI"
+    "wordClass": "VTI"
   }
 }
