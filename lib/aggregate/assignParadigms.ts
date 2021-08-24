@@ -1,9 +1,10 @@
 import { join as joinPath } from "path";
-import { fileURLToPath } from "url";
+import { fileURLToPath }    from "url";
+import { Transducer }       from "hfstol";
+import readNDJSON           from '../utilities/readNDJSON.js';
+import writeNDJSON          from '../utilities/writeNDJSON.js';
+
 import { intersection, isEqual, min, uniqBy } from "lodash-es";
-import { Transducer } from "hfstol";
-import readNDJSON    from '../utilities/readNDJSON.js';
-import writeNDJSON   from '../utilities/writeNDJSON.js';
 
 type Analysis = [string[], string, string[]];
 
@@ -170,6 +171,7 @@ export function inferAnalysis({
   }
 
   return { analysis, paradigm: paradigm ?? undefined, ok };
+
 }
 
 /**
@@ -301,11 +303,13 @@ function doAssignment(entries: NdjsonEntry[]) {
       )}`
     );
   }
+
   if (unusedPersonalPronouns.size !== 0) {
     throw new Error(
       `Unused personal pronouns: ${[...unusedPersonalPronouns].join(", ")}`
     );
   }
+
 }
 
 export default async function aggregate(dbPath: string, outPath: string) {
