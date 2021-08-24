@@ -106,7 +106,7 @@ dist
 # Repository-Specific
 /scratch
 /data
-.eslintrc.js
+.eslintrc.cjs
 .idea
 CW.ndjson
 database.json
