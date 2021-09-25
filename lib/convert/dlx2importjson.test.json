@@ -1,6 +1,9 @@
 [
   {
     "category": "VAI-1",
+    "dataSources": {
+      "CW": {}
+    },
     "fst": {
       "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+3Sg"]],
       "lemma":    "nîmiw",
@@ -25,6 +28,9 @@
   },
   {
     "category": "VAI-1",
+    "dataSources": {
+      "CW": {}
+    },
     "fst": {
       "analysis": [[], "nîmiw", ["+V", "+AI", "+Ind", "+X"]],
       "lemma":    "nîmiw",
