@@ -22,7 +22,11 @@ directory, following LFS pointers to a custom LFS server if necessary.
 # so great for truly huge files. But it takes < 2 seconds to grab an 11MB
 # file, which is just fine for our typical use case.
 
-from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
+from argparse import (
+    ArgumentParser,
+    ArgumentDefaultsHelpFormatter,
+    BooleanOptionalAction,
+)
 from hashlib import sha256
 from pathlib import Path
 from pprint import pprint
@@ -49,6 +53,12 @@ def main():
         "--debug", action="store_true", help="Show LFS server responses"
     )
     parser.add_argument(
+        "--refresh",
+        action=BooleanOptionalAction,
+        default=False,
+        help="Download the file even if it already exists",
+    )
+    parser.add_argument(
         "--use-github-lfs-server",
         action="store_true",
         help="""
@@ -66,15 +76,20 @@ def main():
     )
     args = parser.parse_args()
 
+    out_file = Path(Path(args.path).name)
+    if not args.refresh and out_file.exists():
+        print(f"{out_file} already exists, not downloading")
+        return
+
     ## Get raw file from GitHub
 
-    github_url = f"https://github.com/{args.org}/{args.repo}/raw/{args.branch}/{args.path}"
+    github_url = (
+        f"https://github.com/{args.org}/{args.repo}/raw/{args.branch}/{args.path}"
+    )
     print(f"Trying {github_url} …")
     github_response = requests.get(github_url)
     print(f"{github_response.status_code} {github_response.reason}")
     github_response.raise_for_status()
-
-    out_file = Path(Path(args.path).name)
 
     if not github_response.content.startswith(
         b"version https://git-lfs.github.com/spec/v1\n"
