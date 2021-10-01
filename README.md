@@ -99,7 +99,11 @@ You can also run this script as a JavaScript module. It is located in `lib/build
    1. `cd /opt/morphodict/home/morphodict/src/crkeng/resources/dictionary`
    2. `docker ps | grep crkeng` (`docker ps` lists docker processes)
    3. Copy container ID.
-6. Run incremental import on new version of database.
+6. On your local machine, run `./crkeng-manage buildtestimportjson --full-importjson {path/to/database}`.
+   - If the test importjson file has changed, make a pull request and make sure that it passes tests on CI.
+   - If the structure of the database has changed you may need to update the test cases.
+   - Some tests may also depend on specific definitions, which may have changed. These would simply need their data updated.
+7. Run incremental import on new version of database.
    1. `docker exec -it --user=morphodict {containerID} ./crkeng-manage importjsondict --purge --incremental {path/to/database}`
    * The `morphodict` user is required to write changes.
    * The path to the database will be `src/crkeng/resources/dictionary/crkeng_dictionary.importjson` or some variation thereof.
