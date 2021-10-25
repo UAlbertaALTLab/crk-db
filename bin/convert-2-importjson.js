@@ -5,7 +5,7 @@ import program from 'commander';
 
 program
 .arguments(`<inputPath> <outputPath>`)
-.usage(`convert-2-importjson <inputPath> <outputPath>`)
+.usage(`convert-2-importjson <inputPath> [outputPath]`)
 .action(convert);
 
 program.parse(process.argv);
