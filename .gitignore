@@ -104,8 +104,9 @@ dist
 .tern-port
 
 # Repository-Specific
-/scratch
-/data
+data
+scratch
+local
 .eslintrc.cjs
 .idea
 CW.ndjson
