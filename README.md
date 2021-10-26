@@ -92,22 +92,32 @@ You can also run this script as a JavaScript module. It is located in `lib/build
 
 ## Steps to incrementally update the production database
 
-1. VPN
-2. Update the import JSON file on the ALTLab server.
-3. SSH into ALTLab server: `ssh itw.altlab.dev`
-5. Get the ID of the current Docker container.
-   1. `cd /opt/morphodict/home/morphodict/src/crkeng/resources/dictionary`
-   2. `docker ps | grep crkeng` (`docker ps` lists docker processes)
-   3. Copy container ID.
-6. On your local machine, run `./crkeng-manage buildtestimportjson --full-importjson {path/to/database}`.
+1. Checks the database successfully imports on your local machine.
+   1. `rm src/crkeng/db/db.sqlite3`
+   2. `./crkeng-manage migrate`
+   3. `./crkeng-manage importjsondict --incremental --no-translate-wordforms ../crk-db/data/crkeng_dictionary.importjson`
+   4. `./crkeng-manage importjsondict --incremental ../crk-db/data/crkeng_dictionary.importjson`
+   5. `./crkeng-manage runserver`
+2. On your local machine, run `./crkeng-manage buildtestimportjson --full-importjson {path/to/database}`.
    - If the test importjson file has changed, make a pull request and make sure that it passes tests on CI.
    - If the structure of the database has changed you may need to update the test cases.
    - Some tests may also depend on specific definitions, which may have changed. These would simply need their data updated.
+3. VPN
+4. SSH into ALTLab server: `ssh itw.altlab.dev`
+5. Update the import JSON file on the ALTLab server: `src/crkeng/resources/dictionary/crkeng_dictionary_fromdlx.importjson`
+6. Get the ID of the current Docker container.
+   1. `cd /opt/morphodict/home/morphodict/src/crkeng/resources/dictionary`
+   2. `docker ps | grep crkeng` (`docker ps` lists docker processes)
+   3. Copy container ID.
 7. Run incremental import on new version of database.
    1. `docker exec -it --user=morphodict {containerID} ./crkeng-manage importjsondict --purge --incremental {path/to/database}`
    * The `morphodict` user is required to write changes.
    * The path to the database will be `src/crkeng/resources/dictionary/crkeng_dictionary.importjson` or some variation thereof.
-   * Current production version, built from old XML: `crkeng_dictionary_fromxml2.importjson`
+
+### Potential Issues
+
+- [ ] Why the empty parentheses in entries like *nahâpahtam*? Maybe the `literalMeaning` field?
+- [ ] phrase translation not working for "I see you"
 
 ## Tests
 
@@ -120,7 +130,7 @@ Test for this repository are written using Mocha + Chai. The tests check that th
 [CW]:         https://uofrpress.ca/Books/C/Cree-Words
 [DaFoDiL]:    https://format.digitallinguistics.io/
 [grammar]:    https://plainscree.atlas-ling.ca/grammar/
-[itwewina]:   https://sapir.artsrn.ualberta.ca/cree-dictionary/
+[itwewina]:   https://itwewina.altlab.app/
 [Lacombe]:    https://en.wikipedia.org/wiki/Albert_Lacombe
 [Maskwacis]:  https://en.wikipedia.org/wiki/Maskwacis
 [MD]:         https://www.altlab.dev/maskwacis/dictionary.html

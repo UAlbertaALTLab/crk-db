@@ -1,0 +1,359 @@
+[
+  {
+    "head": "âh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "âh-"
+  },
+  {
+    "head": "câh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "câh-"
+  },
+  {
+    "analysis": [
+      [],
+      "cî",
+      [
+        "+Ipc"
+      ]
+    ],
+    "head": "cî",
+    "linguistInfo": {
+      "inflectional_category": "IPC",
+      "pos": "Ipc",
+      "wordclass": "IPC"
+    },
+    "senses": [],
+    "slug": "cî"
+  },
+  {
+    "head": "ê-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "ê-"
+  },
+  {
+    "head": "êêh",
+    "linguistInfo": {
+      "inflectional_category": "IPJ",
+      "pos": "Ipc",
+      "wordclass": "IPJ"
+    },
+    "senses": [],
+    "slug": "êêh"
+  },
+  {
+    "head": "k-ôh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "k-ôh-"
+  },
+  {
+    "head": "k-ôh-kî-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "k-ôh-kî-"
+  },
+  {
+    "head": "ka-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "ka-@2"
+  },
+  {
+    "head": "kâ-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "kâ-"
+  },
+  {
+    "analysis": [
+      [],
+      "kâ-cawacinâsik",
+      [
+        "+Ipc",
+        "+Prop"
+      ]
+    ],
+    "head": "kâ-cawacinâsik",
+    "linguistInfo": {
+      "inflectional_category": "INM < VII-2n",
+      "pos": "Ipc",
+      "stem": "cawacinâsin-",
+      "wordclass": "INM"
+    },
+    "senses": [],
+    "slug": "kâ-cawacinâsik"
+  },
+  {
+    "head": "kâh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "kâh-@2"
+  },
+  {
+    "head": "kê-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "kê-"
+  },
+  {
+    "head": "kiyê-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "kiyê-"
+  },
+  {
+    "head": "kiyi-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "kiyi-"
+  },
+  {
+    "head": "kôh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "kôh-@2"
+  },
+  {
+    "head": "mâh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "mâh-"
+  },
+  {
+    "head": "na-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "na-"
+  },
+  {
+    "head": "nâh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "nâh-"
+  },
+  {
+    "head": "nôh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "nôh-"
+  },
+  {
+    "head": "nôhci-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "nôhci-"
+  },
+  {
+    "analysis": [
+      [],
+      "opacaskahasîs",
+      [
+        "+N",
+        "+A",
+        "+Sg"
+      ]
+    ],
+    "head": "opacaskahasîs",
+    "linguistInfo": {
+      "inflectional_category": "NA-1",
+      "pos": "N",
+      "stem": "opacaskahasîs-",
+      "wordclass": "NA"
+    },
+    "paradigm": "NA",
+    "senses": [],
+    "slug": "opacaskahasîs"
+  },
+  {
+    "head": "oy-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "oy-"
+  },
+  {
+    "head": "pa-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "pa-"
+  },
+  {
+    "head": "pâh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "pâh-"
+  },
+  {
+    "head": "sa-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "sa-"
+  },
+  {
+    "head": "sâh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "sâh-"
+  },
+  {
+    "head": "ta-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "ta-"
+  },
+  {
+    "head": "tâh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "tâh-@2"
+  },
+  {
+    "head": "tita-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "tita-"
+  },
+  {
+    "head": "wa-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "wa-"
+  },
+  {
+    "head": "wâh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "wâh-@2"
+  },
+  {
+    "head": "ya-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "ya-"
+  },
+  {
+    "head": "yâh-",
+    "linguistInfo": {
+      "inflectional_category": "IPV",
+      "pos": "Ipc",
+      "wordclass": "IPV"
+    },
+    "senses": [],
+    "slug": "yâh-"
+  }
+]
