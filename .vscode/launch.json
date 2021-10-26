@@ -5,13 +5,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-node",
+      "args": ["data/Wolvengrey.toolbox", "out.ndjson"],
+      "type": "node",
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}\\lib\\utilities\\readOriginalCW.js"
+      "program": "${workspaceFolder}\\bin\\convert-CW.js"
     }
   ]
 }

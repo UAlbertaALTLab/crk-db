@@ -211,6 +211,7 @@ rules:
         - name
         - resolve
         - reject
+        - test
         - Text
   no-tabs: warn
   no-template-curly-in-string: warn
