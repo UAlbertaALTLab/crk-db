@@ -109,6 +109,7 @@ scratch
 local
 .eslintrc.cjs
 .idea
+.vscode
 CW.ndjson
 database.json
 database.ndjson
