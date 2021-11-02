@@ -5,14 +5,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "args": ["data/Wolvengrey.toolbox", "out.ndjson"],
+      "args": ["data/database.ndjson", "out.ndjson"],
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}\\bin\\convert-CW.js"
+      "program": "${workspaceFolder}\\bin\\convert-2-importjson.js"
     }
   ]
 }
