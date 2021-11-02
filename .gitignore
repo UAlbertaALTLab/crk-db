@@ -110,6 +110,7 @@ local
 .eslintrc.cjs
 .idea
 .vscode
+.vscode/
 CW.ndjson
 database.json
 database.ndjson
