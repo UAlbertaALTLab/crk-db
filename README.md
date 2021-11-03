@@ -114,11 +114,6 @@ You can also run this script as a JavaScript module. It is located in `lib/build
    * The `morphodict` user is required to write changes.
    * The path to the database will be `src/crkeng/resources/dictionary/crkeng_dictionary.importjson` or some variation thereof.
 
-### Potential Issues
-
-- [ ] Why the empty parentheses in entries like *nahâpahtam*? Maybe the `literalMeaning` field?
-- [ ] phrase translation not working for "I see you"
-
 ## Tests
 
 Test for this repository are written using Mocha + Chai. The tests check that the conversion scripts are working properly, and test for known edge cases. There is one test suite for each conversion script (and some other miscellaneous unit tests as well), located alongside that script in `lib` with the extension `.test.js`. You can run the entire test suite with `npm test`.
