@@ -92,24 +92,25 @@ You can also run this script as a JavaScript module. It is located in `lib/build
 
 ## Steps to incrementally update the production database
 
-1. Checks the database successfully imports on your local machine.
-   1. `rm src/crkeng/db/db.sqlite3`
-   2. `./crkeng-manage migrate`
-   3. `./crkeng-manage importjsondict --incremental --no-translate-wordforms ../crk-db/data/crkeng_dictionary.importjson`
-   4. `./crkeng-manage importjsondict --incremental ../crk-db/data/crkeng_dictionary.importjson`
-   5. `./crkeng-manage runserver`
-2. On your local machine, run `./crkeng-manage buildtestimportjson --full-importjson {path/to/database}`.
-   - If the test importjson file has changed, make a pull request and make sure that it passes tests on CI.
-   - If the structure of the database has changed you may need to update the test cases.
-   - Some tests may also depend on specific definitions, which may have changed. These would simply need their data updated.
-3. VPN
-4. SSH into ALTLab server: `ssh itw.altlab.dev`
-5. Update the import JSON file on the ALTLab server: `src/crkeng/resources/dictionary/crkeng_dictionary_fromdlx.importjson`
-6. Get the ID of the current Docker container.
-   1. `cd /opt/morphodict/home/morphodict/src/crkeng/resources/dictionary`
-   2. `docker ps | grep crkeng` (`docker ps` lists docker processes)
-   3. Copy container ID.
-7. Run incremental import on new version of database.
+1. Clear the existing database: `rm src/crkeng/db/db.sqlite3`
+2. Start a virtual environment: `pipenv shell`
+3. Migrate the database: `./crkeng-manage migrate`
+4. Import latest version of database: `./crkeng-manage importjsondict {path/to/database.importjson}`
+   - incremental update: `--incremental`
+   - don't translate wordforms (runs faster): `--no-translate-wordforms`
+5. Run a local server to test results: `./crkeng-manage runserver`
+6. Build test database: `./crkeng-manage buildtestimportjson --full-importjson {path/to/database.importjson}`
+7. Run tests: `pipenv run test`
+   - If either the structure of the database or the definitions of the test entries have changed, the tests may fail. You will need to update the tests.
+8. Log into U Alberta VPN using Cisco VPN or similar.
+9. Save the latest version of the import JSON to the private ALTLab repo.
+10. SSH into the ALTLab server.
+11. Update the import JSON file located at `src/crkeng/resources/dictionary/crkeng_dictionary.importjson` by copying it from the private ALTLab repo.
+12. Get the ID of the current Docker container:
+    1. `cd /opt/morphodict/home/morphodict/src/crkeng/resources/dictionary`
+    2. `docker ps | grep crkeng` (`docker ps` lists docker processes)
+    3. Copy container ID.
+13. Run incremental import on new version of database:
    1. `docker exec -it --user=morphodict {containerID} ./crkeng-manage importjsondict --purge --incremental {path/to/database}`
    * The `morphodict` user is required to write changes.
    * The path to the database will be `src/crkeng/resources/dictionary/crkeng_dictionary.importjson` or some variation thereof.
