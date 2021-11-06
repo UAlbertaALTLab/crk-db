@@ -104,8 +104,8 @@ You can also run this script as a JavaScript module. It is located in `lib/build
    - If either the structure of the database or the definitions of the test entries have changed, the tests may fail. You will need to update the tests.
 8. Log into U Alberta VPN using Cisco VPN or similar.
 9. Save the latest version of the import JSON to the private ALTLab repo.
-10. SSH into the ALTLab server.
-11. Update the import JSON file located at `src/crkeng/resources/dictionary/crkeng_dictionary.importjson` by copying it from the private ALTLab repo.
+10. SSH into the ALTLab gateway and tunnel to the morphodict server.
+11. Update the import JSON file located at `/opt/morphodict/home/morphodict/src/crkeng/resources/dictionary/crkeng_dictionary.importjson` by copying it from the private ALTLab repo located at `/opt/morphodict/home/altlab/crk/dicts`.
 12. Get the ID of the current Docker container:
     1. `cd /opt/morphodict/home/morphodict/src/crkeng/resources/dictionary`
     2. `docker ps | grep crkeng` (`docker ps` lists docker processes)
