@@ -117,7 +117,7 @@ You can also run this script as a JavaScript module. It is located in `lib/build
 
 ## Tests
 
-Test for this repository are written using Mocha + Chai. The tests check that the conversion scripts are working properly, and test for known edge cases. There is one test suite for each conversion script (and some other miscellaneous unit tests as well), located alongside that script in `lib` with the extension `.test.js`. You can run the entire test suite with `npm test`.
+Tests for this repository are written using Mocha + Chai. The tests check that the conversion scripts are working properly, and test for known edge cases. There is one test suite for each conversion script (and some other miscellaneous unit tests as well), located alongside that script in `lib` with the extension `.test.js`. You can run the entire test suite with `npm test`.
 
 <!-- Links -->
 [ALTLab]:     https://github.com/UAlbertaALTLab
