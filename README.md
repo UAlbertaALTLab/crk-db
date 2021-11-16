@@ -103,14 +103,15 @@ You can also run this script as a JavaScript module. It is located in `lib/build
 7. Run tests: `pipenv run test`
    - If either the structure of the database or the definitions of the test entries have changed, the tests may fail. You will need to update the tests.
 8. Log into U Alberta VPN using Cisco VPN or similar.
-9. Save the latest version of the import JSON to the private ALTLab repo.
+9. Save the latest version of the import JSON to the private ALTLab repo (under `home/morphodict/altlab`) or your user directory. (It can't be copied directly to its final destination because you must assume the morphodict user in order to have write access to the `morphodict/` directory.)
 10. SSH into the ALTLab gateway and tunnel to the morphodict server.
-11. Update the import JSON file located at `/opt/morphodict/home/morphodict/src/crkeng/resources/dictionary/crkeng_dictionary.importjson` by copying it from the private ALTLab repo located at `/opt/morphodict/home/altlab/crk/dicts`.
-12. Get the ID of the current Docker container:
+11. Become the morphodict user: `sudo -i -u morphodict`
+12. Update the import JSON file located at `/opt/morphodict/home/morphodict/src/crkeng/resources/dictionary/crkeng_dictionary.importjson` by copying it from the private ALTLab repo located at `/opt/morphodict/home/altlab/crk/dicts`.
+13. Get the ID of the current Docker container:
     1. `cd /opt/morphodict/home/morphodict/src/crkeng/resources/dictionary`
     2. `docker ps | grep crkeng` (`docker ps` lists docker processes)
     3. Copy container ID.
-13. Run incremental import on new version of database:
+14. Run incremental import on new version of database:
    1. `docker exec -it --user=morphodict {containerID} ./crkeng-manage importjsondict --purge --incremental {path/to/database}`
    * The `morphodict` user is required to write changes.
    * The path to the database will be `src/crkeng/resources/dictionary/crkeng_dictionary.importjson` or some variation thereof.
