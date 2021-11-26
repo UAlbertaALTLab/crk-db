@@ -10,6 +10,8 @@ AE:
 AL:
   name:     Albert Lacombe
   citation: 'Lacombe, Albert.  1874.  Dictionnaire de la Langue Crise.  Montréal: C.O. Beauchemin & Valois.'
+AM:
+  name: ???
 AN:
   name:     Anne Anderson
   citation: 'Anderson, Anne. 1975. Plains Cree Dictionary in The “y” Dialect. Edmonton: s.n.'
@@ -66,6 +68,8 @@ EH:
 EM:
   name:     Emma Minde
   citation: 'Minde, Emma. 1997. kwayask ê-kî-pê-kiskinowâpahtihicik / Their Example Showed Me the Way. Edmonton: University of Alberta Press.'
+F:
+  name: ???
 FA:
   name:     Freda Ahenakew
   note:     Probably Freda Ahenakew. Primary spoken source.
@@ -91,6 +95,8 @@ GJ:
 HW:
   name:     H.C. Wolfart
   citation: 'Wolfart, H.C. 1973. Plains Cree: A Grammatical Study. Transactions of the American Philosophical Society, n.s. vol. 63, pt. 5. Philadelphia.'
+JB:
+  name: ???
 JK:
   name:     Jim Kā-Nīpitēhtēw
   note:     Uncertain.
@@ -105,6 +111,8 @@ KB:
   note:     primary spoken source (dialect comparison)
 LB:
   name:     Leonard Bloomfield Cree-English Lexicon (computerized ms.)
+LBC:
+  name: ???
 LL:
   name:     Lafond & Longneck
   citation: 'Lafond, Alpha and Rose Longneck. 1992. “Reminiscences of Muskeg Lake.”  pp. 239-349 in F. Ahenakew and H.C. Wolfart, eds. kôhkominawak otâcimowiniwâwa / Our Grandmothers’ Lives as Told in Their Own Words. Saskatoon: Fifth House Publishers.'
@@ -155,6 +163,8 @@ SC:
 SR:
   name:     Solomon Ratt
   note:     primary spoken source (th dialect)
+Sr:
+  name: ???
 SW:
   name:     Sarah Whitecalf
   citation: 'Whitecalf, Sarah. 1993. kinêhiyâwiwininaw nêhiyawêwin / The Cree Language is Our Identity. Edited by Freda Ahenakew and H.C. Wolfart. Winnipeg: The University of Manitoba Press.'
