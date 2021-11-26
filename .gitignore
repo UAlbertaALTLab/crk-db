@@ -129,6 +129,7 @@ Wolvengrey.toolbox
 *.toolbox
 out.json
 out.ndjson
+unmatched.*
 
 # generated from typescript source
 lib/aggregate/assignParadigms.js
