@@ -267,12 +267,7 @@ rules:
     - error
     - never
   operator-assignment: error
-  operator-linebreak:
-    - error
-    - before
-    - overrides:
-        ':': ignore
-        '?': ignore
+  operator-linebreak: off
   prefer-arrow-callback:
     - error
     - allowNamedFunctions: true

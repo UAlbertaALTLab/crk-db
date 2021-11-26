@@ -46,6 +46,7 @@ askâwi                 | NI-4                  | N
 pâstâhowi-mihko        | NI-4w                 | N
 ôsi                    | NI-5                  | N
 awa                    | PrA                   | PRON
+                       | PrI                   | PRON
 âcimow                 | VAI                   | V
 âpahikâsow             | VAI-1                 | V
 nêstosin               | VAI-2                 | V
