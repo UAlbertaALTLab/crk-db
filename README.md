@@ -24,6 +24,7 @@ ALTLab's dictionary database is / will be aggregated from the following sources:
   - This is a living source.
 * [Maskwacîs][Maskwacis] [_Nehiyawêwina Pîkiskwewinisa / Dictionary of Cree Words_][MD] (`MD`)
   - This a static source. We are using a manually-edited version of the original dictionary.
+# This is a static source for now.
 * _Alberta Elders' Cree Dictionary_ (`AECD` or `AE` or `ED`)
   - This is a static source.
 * [Albert Lacombe][Lacombe]'s _Dictionnaire de la langue des Cris_ (`DLC`)
@@ -59,14 +60,21 @@ To build and/or update the database, follow the steps below. Each of these steps
 1. Download the original data sources. These are stored in the private ALTLab repo in `crk/dicts`. **Do not commit these files to git.**
 
      * ALTLab data: `altlab.tsv`
+# - ambiguity in the case of this filename: altlab.tsv (as DB source and relabeling source for morphodict -> perhaps for the latter, should be named rather altlabel.tsv, in my opinion)
+# - Also, here this file is referred to as 'altlab.tsv', but later on (under #7) there is a reference to 'ALTLab.tsv' - are these references to the same file? If yes, the names should be harmonized.
      * _Cree: Words_: `Wolvengrey.toolbox`
      * Maskwacîs dictionary: `Maskwacis.tsv`
+
+# Also, where should these files be downloaded to? There is no subdirectory 'data' - should one create that? As you note, these downloaded files should not be committed, but one could note that this concerns this (crk-db) repo (since this involves at least two altlab repos).
 
 2. Install [Node.js][Node]. This will allow you to run the JavaScript scripts used by this project. Note that the Node installation includes the **npm** package manager, which allows you to install Node packages.
 
 3. Install the dependencies for this repo: `npm install`.
 
 4. Convert each data source by running `node bin/convert-*.js <inputPath> <outputPath>`, where `*` stands for the abbreviation of the data source, ex. `convert-CW data/Wolvengrey.toolbox data/CW.ndjson`.
+
+# One needs to turn the *.js files into executables: chmod a+x bin/*
+# Also, the example case does not have the *.js ssuffx, i.e. should rather be: 'convert-CW.js data/Wolvengrey.toolbox data/CW.ndjson'
 
     You can also convert individual data sources by running the conversion scripts as modules. Each conversion script is located in `lib/convert/{ABBR}.js`, where `{ABBR}` is the abbreviation for the data source. Each module exports a function which takes two arguments: the path to the data source and optionally the path where you would like the converted data saved (this should have a `.ndjson` extension). Each module returns an array of the converted entries as well.
 
@@ -78,6 +86,21 @@ To build and/or update the database, follow the steps below. Each of these steps
 
 6. Aggregate the data from the individual data sources: `node bin/aggregate.js <inputPath> <outputPath>` (the output path can be the same as the input path; this will overwrite the original).
 
+# It is not fully clear to me that this would be run on the entire database (which is referred to above as crk/dicts/database.ndjson in the private altlab repo. Based on the wording, it seems that one should run the aggregation on the individual CW and MD sources, but I presume the intended reference
+# is to use database.ndjson instead.
+
+# Also, when running the aggregation command, I get an error indicating a missing HFSTOL file. I could address that by copying the missing analyzer,
+# but either this should happen automatically, or then one should explicitly require the step.
+# node bin/aggregate.js ~/altlab2/crk/dicts/database.ndjson ~/altlab2/crk/dicts/database.ndjson
+# /Users/arppe/altdev/crk-db/node_modules/hfstol/index.js:10
+# class Transducer extends CppTransducer {
+# ^
+# 
+# Error: Transducer not found: ‘/Users/arppe/altdev/crk-db/crk-strict-analyzer-for-dictionary.hfstol’
+#     at new Transducer (/Users/arppe/altdev/crk-db/node_modules/hfstol/index.js:10:1)
+#     at file:///Users/arppe/altdev/crk-db/lib/aggregate/index.js:17:19
+# [ ... ]
+
 7. For convenience, you can perform all the above steps with a single command in the terminal: `npm run build` | `yarn build`. In order for this command to work, you will need each of the following files to be present in the `/data` directory, with these exact filenames:
 
    * `ALTLab.tsv`
@@ -86,7 +109,26 @@ To build and/or update the database, follow the steps below. Each of these steps
 
     The database will be written to `data/database.ndjson`.
 
+# You might want to indicate this in the preceding specific commands, unless the intention is to write the aggregate to the private repo?
+
     You can also run this script as a JavaScript module. It is located in `lib/buildDatabase.js`.
+
+# The above command does not appear to work.
+# chmod a+x lib/buildDatabase.js
+# lib/buildDatabase.js          
+# lib/buildDatabase.js: line 1: /Applications: is a directory
+# lib/buildDatabase.js: line 2: LICENSE: command not found
+# lib/buildDatabase.js: line 3: bin/: is a directory
+# import: unable to open X server `' @ error/import.c/ImportImageCommand/344.
+# [ lines omitted ]
+# usage: dirname path
+# join: as: No such file or directory
+# lib/buildDatabase.js: line 20: syntax error near unexpected token `}'
+# lib/buildDatabase.js: line 20: `}                     from 'path';'
+
+#####
+# Then what?
+# What I'd be interested in is how do I know what I need to review, when updating CW? E.g. what are the entries that need manual reviewing?
 
 ## Steps to incrementally update the production database
 
