@@ -8,11 +8,10 @@ The database uses the [Data Format for Digital Linguistics][DaFoDiL] (DaFoDiL) a
 
 <!-- TOC -->
 - [Sources](#sources)
-- [Project Requirements](#project-requirements)
 - [Process](#process)
-- [Style Guide](#style-guide)
 - [The Database](#the-database)
-- [Building the Database](#building-the-database)
+- [Building & Updating the Database](#building--updating-the-database)
+- [Steps to incrementally update the production database](#steps-to-incrementally-update-the-production-database)
 - [Tests](#tests)
 <!-- /TOC -->
 
@@ -75,6 +74,10 @@ To build and/or update the database, follow the steps below. Each of these steps
     You can also import individual data sources by running the import scripts as modules. Each import script is located in `/lib/import/{ABBR}.js`, where `{ABBR}` is the abbreviation for the data source.
 
     Entries from individual sources are **not** imported as main entries in the ALTLab database. Instead they are stored as subentries (using the `dataSources` field). The import script merely matches entries from individual sources to a main entry, or creates a main entry if none exists. An aggregation script then does the work of combining information from each of the subentries into a main entry (see the next step).
+
+    Each import step prints a table to the console, showing how many entries from the original data source were unmatched.
+
+    When importing the Maskwacîs database, you can add an `-r` or `--report` flag to output a list of unmatched entries to a file. The flag takes the file path as its argument.
 
 6. Aggregate the data from the individual data sources: `node bin/aggregate.js <inputPath> <outputPath>` (the output path can be the same as the input path; this will overwrite the original).
 
