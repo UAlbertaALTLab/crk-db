@@ -25,7 +25,6 @@ directory, following LFS pointers to a custom LFS server if necessary.
 from argparse import (
     ArgumentParser,
     ArgumentDefaultsHelpFormatter,
-    BooleanOptionalAction,
 )
 from hashlib import sha256
 from pathlib import Path
@@ -54,7 +53,6 @@ def main():
     )
     parser.add_argument(
         "--refresh",
-        action=BooleanOptionalAction,
         default=False,
         help="Download the file even if it already exists",
     )

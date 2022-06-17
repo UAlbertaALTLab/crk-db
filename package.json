@@ -78,5 +78,9 @@
       "name": "Andrew Neitsch",
       "url": "https://github.com/andrewdotn"
     }
-  ]
+  ],
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "requests": "^0.3.0"
+  }
 }
