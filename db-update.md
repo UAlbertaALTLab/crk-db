@@ -147,17 +147,26 @@ This process is described on the `README.md` file in https://github.com/UAlberta
 
 0. Install node.js and run `npm install` in the repo.
 
-1. Collect the "original" data sources created from previous steps, in the `$CRK_DB_REPO/data` folder.
+1. Collect the "original" data sources created from previous steps, in the `$CRK_DB_REPO/data` folder:
    - The `altlab.tsv` file
    - The `Maskwacis.tsv` file
    - The `Wolvengrey.toolbox` file
    
-2. Run the following commands:
+2. Run the following command:
 ```
 node rpm build
 ```
 
 After this command is run, the `data/crkeng_dictionary.importjson` file will be generated.
 
+***NOTE: The scripts currently pull via LFS two HFSTs:  `src/crkeng/resources/fst/crk-relaxed-analyzer-for-dictionary.hfstol` and `src/crkeng/resoures/fst/crk-strict-analyzer-for-dictionary.hfstol`.***.  These FSTs are used in the `lib/aggregate/index.js` file.
 
 ## 5. Update the internal database for the intelligent dictionary, including whatever genration of forms in paradigms or English translation equivalents.
+
+For updating the server, please follow the instructions on https://github.com/fbanados/crk-db/tree/update-db-docs#steps-to-incrementally-update-the-production-database .
+
+To update your local database, go to the `morphodict` repo and run
+
+```
+./crkeng-manage importjsondict crkeng_dictionary.importjson
+```
