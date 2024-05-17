@@ -7,7 +7,7 @@ As referenced in UAlbertaALTLab/crk-db#108, the process is:
 2. Update LEXC sources based on updated dictionary sources
 3. Compile new FSTs in giellalt/lang-crk
 4. Aggregate and process dictionary sources into an `importjson` file for uploading to the intelligent dictionary
-5. Update the internal database for the intelligent dictionary, including whatever geenration of forms in paradigms or English translation equivalents.
+5. Update the internal database for the intelligent dictionary, including whatever genration of forms in paradigms or English translation equivalents.
 
 ## 1. Update dictionary sources
 
@@ -142,3 +142,22 @@ define DescriptiveAnalyser
 Normally, the necessary FSTs would be created according to the standard GiellaLT compilation configruration, with the option `--enable-dicts`.
 
 ## 4. Aggregate and process dictionary sources into an `importjson` file for uploading to the intelligent dictionary
+
+This process is described on the `README.md` file in https://github.com/UAlbertaALTLab/crk-db but we currently document it here for completeness:
+
+0. Install node.js and run `npm install` in the repo.
+
+1. Collect the "original" data sources created from previous steps, in the `$CRK_DB_REPO/data` folder.
+   - The `altlab.tsv` file
+   - The `Maskwacis.tsv` file
+   - The `Wolvengrey.toolbox` file
+   
+2. Run the following commands:
+```
+node rpm build
+```
+
+After this command is run, the `data/crkeng_dictionary.importjson` file will be generated.
+
+
+## 5. Update the internal database for the intelligent dictionary, including whatever genration of forms in paradigms or English translation equivalents.
