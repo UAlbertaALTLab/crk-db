@@ -24,7 +24,7 @@ svn up
 ```
 cat PlainsLexUni/CreeDict-x | tr -d '\r' > altlab/crk/dicts/Wolvengrey_altlab.toolbox
 ```
-
+***Note: A version of this file lives in the private altlab repo at `crk/dicts/` ***
 2. Convert this Toolbox file into TSV format:
 
 ```
