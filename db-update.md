@@ -11,7 +11,7 @@ As referenced in UAlbertaALTLab/crk-db#108, the process is:
 
 ## 1. Update dictionary sources
 
-(From UAlbertaALTLab/crk-db#108)
+(From UAlbertaALTLab/crk-db#108): ***The following steps should be equivalent to running the `altlab/crk/bin/update-crk-dictionary-sources-2-lexc.sh` script from the private repo.***
 
 0. Update Cree Words (CW) source file CreeDict-x in Carleton repo
 
@@ -38,6 +38,8 @@ cat altlab/crk/dicts/Wolvengrey_altlab.toolbox | altlab/crk/bin/toolbox2tsv.sh >
 altlab/crk/bin/add-md-entries-2-after-cw-tsv.sh altlab/crk/generated/Wolvengrey_altlab.tsv altlab/crk/dicts/Maskwacis_altlab.tsv > altlab/crk/generated/altlab.tsv
 ```
 
+## 2. Update LEXC sources based on updated dictionary sources
+
 4. Generate LEXC source for individual parts-of-speech from this ALTLab aggregated TSV file:
 
 ```
@@ -51,3 +53,92 @@ cat altlab/crk/generated/altlab.tsv | altlab/crk/bin/altlab2lexc.sh 'V' > altlab
 cat giellalt/lang-crk/src/fst/stems/noun_header.lexc altlab/crk/generated/noun_stems.lexc > giellalt/lang-crk/src/fst/stems/noun_stems.lexc
 cat giellalt/lang-crk/src/fst/stems/verb_header.lexc altlab/crk/generated/verb_stems.lexc > giellalt/lang-crk/src/fst/stems/verb_stems.lexc
 ```
+
+## 3. Compile new FSTs in `giellalt/lang-crk`
+Follow the instructions from https://github.com/giellalt/lang-crk, once you are in the repo:
+
+```
+./autogen-sh
+./configure
+make
+```
+
+Make sure you have provided the desired configuration options to `./configure` to generate the FSTs you are interested in.
+
+From both  UAlbertaALTLab/morphodict/257 and  UAlbertaALTLab/crk-db#109, the process can also be performed with the 
+
+The following are explicit instructions on creating a descriptive analyzer and normative generator (with morpheme boundaries) from updated LEXC source (undertaken in #108):
+
+1. Create basic morphological model
+
+If one has compiled the aggregate LEXC file, `lexicon.tmp.lexc`, with the regular GiellaLT compilation scheme, one can use that file as the primary source.
+
+```
+read lexc src/fst/lexicon.tmp.lexc
+define Morphology
+```
+
+Otherwise, one can compile the aggregate file as follows:
+
+`cat src/fst/root.lexc src/fst/stems/noun_stems.lexc src/fst/stems/verb_stems.lexc src/fst/stems/particles.lexc src/fst/stems/pronouns.lexc src/fst/stems/numerals.lexc src/fst/affixes/noun_affixes.lexc src/fst/affixes/verb_affixes.lexc > lexicon.tmp.lexc `
+
+2. Create basic phonological model
+
+```
+source src/fst/phonology.xfscript
+define Phonology
+```
+
+ 3. Create filters for removing a) word fragments and b) orthographically non-standard forms.
+
+```
+regex ~[ $[ "+Err/Frag" ]];
+define removeFragments
+
+regex ~[ $[ "+Err/Orth" ]];
+define removeNonStandardForms
+```
+
+ 4. Create filter to select only forms belonging to dictionary parts-of-speech.
+
+```
+regex $[ "+N" | "+V" | "+Ipc" | "+Pron" ];
+define selectDictPOS
+```
+
+ 5. Compose normative generator.
+
+```
+set flag-is-epsilon ON
+regex [ selectDictPOS .o. removeNonStandardForms .o. removeFragments .o. Morphology .o. Phonology ];
+save stack generator-gt-dict-norm.hfst
+define NormativeGenerator
+```
+
+ 6. Specify transcriptor to remove special morpheme boundary characters.
+
+```
+regex [ [ "<" | ">" | "/" ] -> 0 ];
+define removeBoundaries
+```
+
+ 7. Load in basic model for spell relaxation.
+
+```
+load src/orthography/spellrelax.compose.hfst
+define SpellRelax
+```
+
+ 8. Compose descriptive analyzer
+
+```
+regex [ selectDictPOS .o. removeFragments .o. Morphology .o. Phonology .o. removeBoundaries .o. SpellRelax ];
+# regex [ NormativeGenerator .o. removeBoundaries .o. SpellRelax ];
+invert net
+save stack analyser-gt-dict-desc.hfst
+define DescriptiveAnalyser
+```
+
+Normally, the necessary FSTs would be created according to the standard GiellaLT compilation configruration, with the option `--enable-dicts`.
+
+## 4. Aggregate and process dictionary sources into an `importjson` file for uploading to the intelligent dictionary
