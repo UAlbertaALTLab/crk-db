@@ -81,6 +81,7 @@
   ],
   "dependencies": {
     "argparse": "^2.0.1",
+    "cree-sro-syllabics": "^2021.6.8",
     "requests": "^0.3.0"
   }
 }
