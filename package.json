@@ -28,7 +28,7 @@
     "build:relax-fst": "python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-relaxed-analyzer-for-dictionary.hfstol",
     "build:strict-fst": "python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-strict-analyzer-for-dictionary.hfstol",
     "clear": "node bin/clearDatabase.js",
-    "test": "mocha --ignore=Toolbox.test.js lib/**/*.test.js test/*.test.js",
+    "test": "mocha --ignore=Toolbox.test.js \"lib/**/*.test.js\" \"test/*.test.js\"",
     "test:build": "mocha lib/test/testBuild.js"
   },
   "bin": {
