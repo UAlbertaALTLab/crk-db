@@ -18,7 +18,7 @@
   ],
   "private": true,
   "engines": {
-    "node": ">=16.0"
+    "node": ">=22.0"
   },
   "type": "module",
   "scripts": {
@@ -28,7 +28,7 @@
     "build:relax-fst": "python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-relaxed-analyzer-for-dictionary.hfstol",
     "build:strict-fst": "python lib/utilities/mini-lfs-client.py UAlbertaALTLab cree-intelligent-dictionary src/crkeng/resources/fst/crk-strict-analyzer-for-dictionary.hfstol",
     "clear": "node bin/clearDatabase.js",
-    "test": "mocha --ignore=Toolbox.test.js lib/**/*.test.js test/*.test.js",
+    "test": "mocha --ignore=Toolbox.test.js \"lib/**/*.test.js\" \"test/*.test.js\"",
     "test:build": "mocha lib/test/testBuild.js"
   },
   "bin": {
@@ -47,12 +47,12 @@
     "commander": "^7.2.0",
     "csv-parse": "^4.15.3",
     "csv-stringify": "^5.6.2",
-    "eslint": "^8.1.0",
-    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint": ">=9.0.0",
+    "eslint-plugin-chai-friendly": ">=1.1.0",
     "fs-extra": "^10.0.0",
     "hfstol": "^0.0.3",
-    "js-yaml": "^4.1.0",
-    "mocha": "^10.7.3",
+    "js-yaml": ">=4.1.1",
+    "mocha": ">=10.7.0",
     "ndjson": "^2.0.0",
     "ora": "^5.4.1",
     "sort-keys": "^5.0.0"
@@ -77,6 +77,15 @@
     {
       "name": "Andrew Neitsch",
       "url": "https://github.com/andrewdotn"
+    },
+    {
+      "name": "Felipe Bañados Schwerter",
+      "url":  "https://github.com/fbanados"
     }
-  ]
+  ],
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "cree-sro-syllabics": "^2021.6.8",
+    "requests": "^0.3.0"
+  }
 }
