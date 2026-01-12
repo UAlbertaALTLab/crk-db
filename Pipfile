@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 requests = "*"
+urllib3 = ">=2.6.3"
 
 [dev-packages]
 
